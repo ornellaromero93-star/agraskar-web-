@@ -761,3 +761,74 @@ body.light .logo p{
     color:#666;
 
 }
+/*=================================
+            MODO CLARO
+=================================*/
+
+body.light{
+    background:#f5f7fb;
+    color:#222;
+}
+
+/* Sidebar */
+
+body.light .sidebar{
+    background:#ffffff;
+    border-right:3px solid #2f80ed;
+}
+
+body.light .logo h1{
+    color:#222;
+}
+
+body.light .logo p{
+    color:#666;
+}
+
+body.light .sidebar nav a{
+    color:#222;
+}
+
+body.light .sidebar nav a:hover{
+    color:white;
+}
+
+body.light .sidebar-bottom h3{
+    color:#444;
+}
+
+/* Hero */
+
+body.light .hero{
+    background:linear-gradient(135deg,#7ab6ff,#4b97ff);
+}
+
+/* Tarjetas */
+
+body.light .tarjeta{
+    background:white;
+    color:#222;
+}
+
+body.light .tarjeta h3{
+    color:#222;
+}
+
+body.light .tarjeta p{
+    color:#555;
+}
+
+/* Secciones */
+
+body.light .imprimibles,
+body.light .contacto-section{
+    background:white;
+    color:#222;
+}
+
+/* Footer */
+
+body.light footer{
+    color:#666;
+    border-top:1px solid #ddd;
+}
