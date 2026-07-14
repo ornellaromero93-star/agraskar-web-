@@ -1180,7 +1180,7 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
     background-image:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
-        url("../imagenes/omelette-express-banner.jpg");
+        url("../imagenes/juegos/omelette-express-banner.jpg")
 
     background-size:cover;
 
