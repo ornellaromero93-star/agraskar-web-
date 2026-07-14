@@ -3,551 +3,292 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Omelette Express | Agraskar</title>
 
-<title>Omelette Express - Agraskar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
 
-<link rel="stylesheet" href="../style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
 
-
 <body>
-
 
 <div class="contenedor">
 
+    <!-- ===========================
+            MENÚ LATERAL
+    ============================ -->
 
-<!-- ==========================
-        MENU LATERAL
-=========================== -->
+    <aside class="sidebar">
 
+        <div class="logo">
 
-<aside class="sidebar">
+            <div class="logo-icono">
+                🎮
+            </div>
 
+            <h1>Agraskar</h1>
 
-<div class="logo">
+            <p>Tu lugar para jugar</p>
 
-<div class="logo-icono">
-🎮
-</div>
+        </div>
 
+        <nav>
 
-<h1>Agraskar</h1>
+            <a href="../index.html#inicio">
+                <i class="fas fa-house"></i>
+                Inicio
+            </a>
 
-<p>
-Tu lugar para jugar
-</p>
+            <a href="../index.html#juegos">
+                <i class="fas fa-gamepad"></i>
+                Juegos
+            </a>
 
+            <a href="../index.html#imprimibles">
+                <i class="fas fa-print"></i>
+                Imprimibles
+            </a>
 
-</div>
+            <button id="modoOscuro" class="modo-btn">
 
+                <i class="fas fa-moon"></i>
 
+                <span>Modo Oscuro</span>
 
+            </button>
 
-<nav>
+        </nav>
 
+        <div class="sidebar-bottom">
 
-<a href="../index.html#inicio">
+            <h3>Seguinos</h3>
 
-<i class="fas fa-house"></i>
+            <div class="redes">
 
-Inicio
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
 
-</a>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
 
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
 
+                <a href="#">
+                    <i class="fab fa-tiktok"></i>
+                </a>
 
-<a href="../index.html#juegos">
+            </div>
 
-<i class="fas fa-gamepad"></i>
+            <a href="../index.html#contacto" class="contacto">
 
-Juegos
+                <i class="fas fa-envelope"></i>
 
-</a>
+                Contacto
 
+            </a>
 
+        </div>
 
-<a href="../index.html#imprimibles">
+    </aside>
 
-<i class="fas fa-print"></i>
 
-Imprimibles
 
-</a>
+    <!-- ===========================
+            CONTENIDO
+    ============================ -->
 
+    <main class="contenido">
 
 
-<button id="modoOscuro" class="modo-btn">
 
-<i class="fas fa-moon"></i>
+        <!-- Banner -->
 
-<span>
-Modo Oscuro
-</span>
+        <header class="banner-juego">
 
-</button>
+            <div class="banner-overlay">
 
+                <span class="estado publicado">
 
-</nav>
+                    🟢 Juego Publicado
 
+                </span>
 
+                <h1>🍳 Omelette Express</h1>
 
+                <p class="subtitulo">
 
+                    El desafío culinario comienza aquí.
 
-<div class="sidebar-bottom">
+                </p>
 
+            </div>
 
-<h3>
-Seguinos
-</h3>
+        </header>
 
 
-<div class="redes">
 
+        <!-- Imagen principal -->
 
-<a href="#">
-<i class="fab fa-instagram"></i>
-</a>
+        <section class="hero-juego">
 
+            <img
+                src="../imagenes/juegos/omelette-express.jpg"
+                alt="Omelette Express"
+                class="portada-juego">
 
-<a href="#">
-<i class="fab fa-facebook"></i>
-</a>
+        </section>
 
 
-<a href="#">
-<i class="fab fa-youtube"></i>
-</a>
 
+        <!-- Información rápida -->
 
-<a href="#">
-<i class="fab fa-tiktok"></i>
-</a>
+        <section class="info-rapida">
 
+            <div class="dato">
 
-</div>
+                👥
 
+                <span>2 a 4 jugadores</span>
 
+            </div>
 
+            <div class="dato">
 
-<a href="../index.html#contacto" class="contacto">
+                🎂
 
-<i class="fas fa-envelope"></i>
+                <span>8+ años</span>
 
-Contacto
+            </div>
 
-</a>
+            <div class="dato">
 
+                ⏱
 
-</div>
+                <span>25 minutos</span>
 
+            </div>
 
-</aside>
+            <div class="dato">
 
+                🎲
 
+                <span>Familiar</span>
 
+            </div>
 
-<header class="banner-juego">
+            <div class="dato">
 
-    <div class="banner-overlay">
+                🌎
 
-        <span class="estado publicado">
-            🟢 Juego Publicado
-        </span>
+                <span>Español</span>
 
-        <h1>🍳 Omelette Express</h1>
+            </div>
 
-        <p class="subtitulo">
-            El desafío culinario comienza aquí.
-        </p>
+            <div class="dato">
 
-    </div>
+                📅
 
-</header>
+                <span>2026</span>
 
+            </div>
 
-<section class="hero-juego">
+        </section>
 
-    <img
-        src="../imagenes/omelette-express.jpg"
-        alt="Omelette Express"
-        class="portada-juego"
-    >
 
-</section>
 
+        <!-- ===========================
+                PESTAÑAS
+        ============================ -->
 
-<section class="info-rapida">
-        <!-- ==========================
-        PESTAÑAS
-========================== -->
+        <div class="tabs">
 
-<div class="tabs">
+            <button class="tab-btn active" data-tab="ficha">
 
-    <button class="tab-btn active" data-tab="ficha">
-        📋 Ficha Técnica
-    </button>
+                <i class="fas fa-circle-info"></i>
 
-    <button class="tab-btn" data-tab="reglas">
-        📖 Reglamento
-    </button>
+                Ficha Técnica
 
-    <button class="tab-btn" data-tab="galeria">
-        🖼 Galería
-    </button>
+            </button>
 
-    <button class="tab-btn" data-tab="videos">
-        🎥 Videos
-    </button>
+            <button class="tab-btn" data-tab="reglamento">
 
-</div>
+                <i class="fas fa-book-open"></i>
 
+                Reglamento
 
+            </button>
 
-<!-- CONTENIDO -->
+            <button class="tab-btn" data-tab="galeria">
 
-<div class="tab-content active" id="ficha">
+                <i class="fas fa-images"></i>
 
-    <h2>📋 Ficha Técnica</h2>
+                Galería
 
-    <table class="tabla-ficha">
+            </button>
 
-        <tr>
-            <td>Título</td>
-            <td>Omelette Express</td>
-        </tr>
+            <button class="tab-btn" data-tab="videos">
 
-        <tr>
-            <td>Autor</td>
-            <td>Agustín Atencio Andrioli</td>
-        </tr>
+                <i class="fab fa-youtube"></i>
 
-        <tr>
-            <td>Arte</td>
-            <td>Domenico Russo</td>
-        </tr>
+                Videos
 
-        <tr>
-            <td>Año</td>
-            <td>2026</td>
-        </tr>
+            </button>
 
-        <tr>
-            <td>Jugadores</td>
-            <td>2 a 4</td>
-        </tr>
+        </div>
 
-        <tr>
-            <td>Edad</td>
-            <td>8+</td>
-        </tr>
 
-        <tr>
-            <td>Duración</td>
-            <td>25 minutos</td>
-        </tr>
 
-    </table>
+        <!-- ===========================
+            CONTENIDO DE LAS PESTAÑAS
+        ============================ -->
 
-</div>
 
 
+        <!-- FICHA -->
 
-<div class="tab-content" id="reglas">
+        <section id="ficha" class="tab-content active">
 
-    <h2>📖 Reglamento</h2>
+            <h2>📋 Ficha Técnica</h2>
 
-    <p>
-        Próximamente podrás leer el reglamento completo aquí
-        o descargarlo en PDF.
-    </p>
+            <table class="tabla-ficha">
 
-</div>
+                <tr>
 
+                    <th>Título</th>
 
+                    <td>Omelette Express</td>
 
-<div class="tab-content" id="galeria">
+                </tr>
 
-    <h2>🖼 Galería</h2>
+                <tr>
 
-    <p>
-        Muy pronto encontrarás imágenes del juego.
-    </p>
+                    <th>Autor</th>
 
-</div>
+                    <td>Agustín Atencio Andrioli</td>
 
+                </tr>
 
+                <tr>
 
-<div class="tab-content" id="videos">
+                    <th>Arte</th>
 
-    <h2>🎥 Videos</h2>
+                    <td>Domenico Russo</td>
 
-    <p>
-        Aquí aparecerán tutoriales y partidas.
-    </p>
+                </tr>
 
-</div>
+                <tr>
 
-    <div class="dato">
-        👥
-        <span>2–4 jugadores</span>
-    </div>
+                    <th>Editorial</th>
 
-    <div class="dato">
-        🎂
-        <span>8+</span>
-    </div>
+                    <td>Agraskar</td>
 
-    <div class="dato">
-        ⏱
-        <span>25 min</span>
-    </div>
-
-    <div class="dato">
-        🎲
-        <span>Familiar</span>
-    </div>
-
-    <div class="dato">
-        🌎
-        <span>Español</span>
-    </div>
-
-    <div class="dato">
-        📅
-        <span>2026</span>
-    </div>
-
-</section>
-
-
-<!-- ==========================
-        CONTENIDO DEL JUEGO
-=========================== -->
-
-
-<main class="contenido">
-
-
-
-<div class="pagina-juego">
-
-
-
-<a class="volver" href="../index.html#juegos">
-
-⬅ Volver a juegos
-
-</a>
-
-
-
-
-
-<h1>
-🍳 Omelette Express
-</h1>
-
-
-
-
-
-
-<img class="imagen-juego"
-src="../imagenes/omelette-express.jpg"
-alt="Omelette Express">
-
-
-
-
-
-
-
-<section class="descripcion-juego">
-
-
-<h2>
-🎮 Descripción
-</h2>
-
-
-
-<p>
-
-Omelette Express es un juego de cocina y estrategia
-donde los jugadores deberán preparar deliciosos
-omelettes, administrar ingredientes y superar
-diferentes desafíos.
-
-La rapidez, la organización y la toma de decisiones
-serán fundamentales para lograr los mejores resultados.
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="ficha-tecnica">
-
-
-<h2>
-📋 Ficha Técnica
-</h2>
-
-
-
-<ul>
-
-<li>
-<strong>Título original:</strong>
-Omelette Express
-</li>
-
-
-<li>
-<strong>Autor:</strong>
-Agustín Atencio Andrioli
-</li>
-
-
-<li>
-<strong>Arte:</strong>
-Domenico Russo
-</li>
-
-
-<li>
-<strong>Año de publicación:</strong>
-2026
-</li>
-
-
-<li>
-<strong>Primera edición en español:</strong>
-2026
-</li>
-
-
-</ul>
-
-
-</section>
-
-
-
-
-
-
-<div class="botones-juego">
-
-
-<a href="#ficha">
-
-📋 Ficha técnica
-
-</a>
-
-
-<a href="#reglas">
-
-📖 Reglas
-
-</a>
-
-
-<a href="#links">
-
-🔗 Links útiles
-
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<section id="reglas" class="descripcion-juego">
-
-
-<h2>
-📖 Reglas
-</h2>
-
-
-<p>
-
-Próximamente se incorporará el reglamento
-completo de Omelette Express.
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-<section id="links" class="descripcion-juego">
-
-
-<h2>
-🔗 Links útiles
-</h2>
-
-
-<p>
-
-🌐 Página oficial
-
-<br><br>
-
-📱 Redes sociales
-
-<br><br>
-
-📰 Noticias del juego
-
-</p>
-
-
-</section>
-
-
-
-
-</div>
-
-
-
-</main>
-
-
-
-</div>
-
-
-
-
-<script src="../script.js"></script>
-
-
-</body>
-
-</html>
+                </tr>
