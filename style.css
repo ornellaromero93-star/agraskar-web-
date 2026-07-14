@@ -1,116 +1,177 @@
 /* =========================
-   ESTILOS GENERALES
+   ESTILO GENERAL GAMER
 ========================= */
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #080b16;
+  color: white;
 }
 
 
 /* =========================
-   ENCABEZADO
+   CABECERA
 ========================= */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px;
+  padding: 20px 40px;
+  background-color: #11182b;
+  border-bottom: 2px solid #00e5ff;
 }
+
 
 header h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 
 /* =========================
-   MENÚ DE NAVEGACIÓN
+   MENU
 ========================= */
 
 .nav-links a {
+
   color: white;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 25px;
   font-size: 18px;
+
 }
+
 
 .nav-links a:hover {
-  text-decoration: underline;
-}
 
+  color: #00e5ff;
 
-/* Botón ☰ */
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
 }
 
 
 /* =========================
-   CONTENIDO PRINCIPAL
+   PORTADA PRINCIPAL
 ========================= */
 
-main {
-  padding: 40px;
+.hero {
+
   text-align: center;
+  padding: 80px 20px;
+
 }
 
-main p {
+
+.hero h2 {
+
+  font-size: 45px;
+  margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
   font-size: 22px;
+  color: #cccccc;
+
+}
+
+
+/* BOTÓN */
+
+button {
+
+  margin-top: 30px;
+  padding: 15px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: #00e5ff;
+  color: #000;
+  cursor: pointer;
+
+}
+
+
+button:hover {
+
+  transform: scale(1.05);
+
 }
 
 
 /* =========================
-   PIE DE PÁGINA
+   SECCION JUEGOS
+========================= */
+
+.games {
+
+  text-align: center;
+  padding: 40px;
+
+}
+
+
+.game-card {
+
+  background-color: #151d35;
+  width: 300px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #00e5ff;
+
+}
+
+
+.game-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+
+/* =========================
+   PIE
 ========================= */
 
 footer {
-  background-color: #333;
-  color: white;
+
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 20px;
+  background-color: #11182b;
+  margin-top: 50px;
+
 }
 
 
 /* =========================
-   ADAPTACIÓN PARA CELULARES
+   CELULARES
 ========================= */
 
-@media (max-width: 700px) {
+@media(max-width:700px){
 
   header {
+
     flex-direction: column;
+
   }
 
-  .menu-toggle {
-    display: block;
-    margin-top: 10px;
-  }
 
   .nav-links {
-    margin-top: 15px;
+
+    margin-top: 20px;
+
   }
+
 
   .nav-links a {
+
     display: block;
     margin: 10px;
-  }
 
-  main {
-    padding: 20px;
   }
 
 }
