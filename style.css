@@ -41,4 +41,18 @@ footer {
     background-color: #fff3e0;
   }
 }
+header {
+  display: flex;
+  justify-content: space-between; /* título a la izquierda, menú a la derecha */
+  align-items: center; /* centra verticalmente */
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
 
