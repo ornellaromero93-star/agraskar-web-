@@ -3,128 +3,218 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <title>Agraskar Games</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Agraskar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
 
-
 <body>
 
+<div class="contenedor">
 
-<header>
+    <!-- MENÚ LATERAL -->
 
-  <h1>🎮 Agraskar Games</h1>
+    <aside class="sidebar">
 
-  <nav class="nav-links">
-    <a href="#">Inicio</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Categorías</a>
-    <a href="#">Ranking</a>
-  </nav>
+        <div class="logo">
 
-</header>
+            <div class="logo-icono">
+                🎮
+            </div>
 
+            <h1>Agraskar</h1>
 
+            <p>Tu lugar para jugar</p>
 
-<main>
+        </div>
 
+        <nav>
 
-<section class="catalogo">
+            <a href="#inicio">
+                <i class="fas fa-house"></i>
+                Inicio
+            </a>
 
-  <h2>🎯 Catálogo de Juegos</h2>
+            <a href="#juegos">
+                <i class="fas fa-gamepad"></i>
+                Juegos
+            </a>
 
-  <p>
-    Explora nuestros juegos y elegí tu próximo desafío.
-  </p>
+            <a href="#imprimibles">
+                <i class="fas fa-print"></i>
+                Imprimibles
+            </a>
 
+            <button id="modoOscuro" class="modo-btn">
+                <i class="fas fa-moon"></i>
+                Modo Oscuro
+            </button>
 
+        </nav>
 
-  <div class="juegos">
+        <div class="sidebar-bottom">
 
+            <h3>Seguinos</h3>
 
-    <!-- JUEGO 1 -->
+            <div class="redes">
 
-    <div class="tarjeta">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
 
-      <img src="imagenes/snake.jpg" alt="Snake">
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
 
-      <h3>🐍 Snake</h3>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
 
-      <p>
-        Juego clásico de habilidad y velocidad.
-      </p>
+                <a href="#">
+                    <i class="fab fa-tiktok"></i>
+                </a>
 
-      <a href="juegos/snake.html">
-        Ver juego
-      </a>
+            </div>
 
-    </div>
+            <a href="#contacto" class="contacto">
+                <i class="fas fa-envelope"></i>
+                Contacto
+            </a>
 
+        </div>
 
+    </aside>
 
-    <!-- JUEGO 2 -->
+    <!-- CONTENIDO -->
 
-    <div class="tarjeta">
+    <main class="contenido">
 
-      <img src="imagenes/puzzle.jpg" alt="Puzzle">
+        <!-- INICIO -->
 
-      <h3>🧩 Puzzle</h3>
+        <section id="inicio" class="hero">
 
-      <p>
-        Resuelve desafíos y demuestra tu inteligencia.
-      </p>
+            <h2>Bienvenido a Agraskar</h2>
 
-      <a href="juegos/puzzle.html">
-        Ver juego
-      </a>
+            <p>
+                Tu plataforma para descubrir juegos, divertirte y encontrar
+                material imprimible.
+            </p>
 
-    </div>
+        </section>
 
+        <!-- JUEGOS -->
 
+        <section id="juegos" class="catalogo">
 
-    <!-- JUEGO 3 -->
+            <h2>🎮 Juegos</h2>
 
-    <div class="tarjeta">
+            <div class="juegos">
 
-      <img src="imagenes/trivia.jpg" alt="Trivia">
+                <!-- Snake -->
 
-      <h3>🧠 Trivia</h3>
+                <div class="tarjeta">
 
-      <p>
-        Responde preguntas y consigue puntos.
-      </p>
+                    <img src="imagenes/snake.jpg" alt="Snake">
 
-      <a href="juegos/trivia.html">
-        Ver juego
-      </a>
+                    <h3>🐍 Snake</h3>
 
-    </div>
+                    <p>
+                        Juego clásico de habilidad y velocidad.
+                    </p>
 
+                    <a href="juegos/snake.html">
+                        Jugar
+                    </a>
 
+                </div>
 
-  </div>
+                <!-- Puzzle -->
 
+                <div class="tarjeta">
 
-</section>
+                    <img src="imagenes/puzzle.jpg" alt="Puzzle">
 
+                    <h3>🧩 Puzzle</h3>
 
-</main>
+                    <p>
+                        Resuelve desafíos y demuestra tu inteligencia.
+                    </p>
 
+                    <a href="juegos/puzzle.html">
+                        Jugar
+                    </a>
 
+                </div>
 
-<footer>
+                <!-- Trivia -->
 
-  <p>
-    © 2026 Agraskar Games
-  </p>
+                <div class="tarjeta">
 
-</footer>
+                    <img src="imagenes/trivia.jpg" alt="Trivia">
 
+                    <h3>🧠 Trivia</h3>
+
+                    <p>
+                        Poné a prueba tus conocimientos.
+                    </p>
+
+                    <a href="juegos/trivia.html">
+                        Jugar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- IMPRIMIBLES -->
+
+        <section id="imprimibles" class="imprimibles">
+
+            <h2>🖨 Imprimibles</h2>
+
+            <p>
+                Próximamente encontrarás actividades, juegos y materiales para descargar.
+            </p>
+
+        </section>
+
+        <!-- CONTACTO -->
+
+        <section id="contacto" class="contacto-section">
+
+            <h2>📞 Contacto</h2>
+
+            <p>
+                ¿Querés comunicarte con nosotros?
+            </p>
+
+            <p>
+                📧 contacto@agraskar.com
+            </p>
+
+        </section>
+
+        <footer>
+
+            <p>
+                © 2026 Agraskar - Todos los derechos reservados.
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
