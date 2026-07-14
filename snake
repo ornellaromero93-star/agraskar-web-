@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Snake - Agraskar Games</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>🐍 Snake</h1>
+
+<nav class="nav-links">
+<a href="../index.html">Catálogo</a>
+<a href="#">Ranking</a>
+</nav>
+
+</header>
+
+
+
+<main>
+
+<section class="detalle-juego">
+
+
+<h2>🐍 Snake</h2>
+
+
+<div class="imagen-juego">
+
+<img src="../imagenes/snake.jpg" alt="Snake">
+
+</div>
+
+
+<h3>Descripción</h3>
+
+<p>
+Controla la serpiente, consigue comida
+y logra la mayor puntuación posible.
+</p>
+
+
+<div class="informacion">
+
+<p>⭐ Dificultad: Fácil</p>
+<p>🎯 Categoría: Arcade</p>
+<p>👤 Jugadores: 1</p>
+
+</div>
+
+
+<button>
+JUGAR AHORA
+</button>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 Agraskar Games
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
