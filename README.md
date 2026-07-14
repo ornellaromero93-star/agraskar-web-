@@ -1,1 +1,2 @@
-# agraskar-web-
+# Agraskar Web
+Proyecto inicial.
