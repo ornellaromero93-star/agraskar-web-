@@ -55,55 +55,11 @@ nav a {
   margin-left: 15px;
   text-decoration: none;
 }
-/* Estilos del encabezado */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #4CAF50;
-  color: white;
-  padding: 1em;
-}
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
 
-/* Menú de enlaces */
-.nav-links {
-  display: flex;
-}
-
-.nav-links a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-}
-
-/* Botón hamburguesa oculto en escritorio */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* Vista móvil */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* ocultar menú por defecto */
-    flex-direction: column;
-    background-color: #4CAF50;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-  }
-
-  .nav-links.show {
-    display: flex; /* mostrar menú cuando se active */
-  }
-
-  .menu-toggle {
-    display: block; /* mostrar botón hamburguesa */
-  }
-}
-
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
