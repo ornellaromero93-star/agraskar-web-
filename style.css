@@ -1,303 +1,355 @@
-/* =========================
-   ESTILO GENERAL GAMER
-========================= */
+/*=========================================
+            AGRASKAR
+=========================================*/
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #080b16;
-  color: white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-
-/* =========================
-   CABECERA
-========================= */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #11182b;
-  border-bottom: 2px solid #00e5ff;
+html{
+    scroll-behavior:smooth;
 }
 
+body{
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
+    font-family:Arial, Helvetica, sans-serif;
 
+    background:#121212;
 
-/* =========================
-   MENU
-========================= */
+    color:white;
 
-.nav-links a {
-
-  color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  font-size: 18px;
+    overflow-x:hidden;
 
 }
 
+/*=============================
+      CONTENEDOR GENERAL
+=============================*/
 
-.nav-links a:hover {
+.contenedor{
 
-  color: #00e5ff;
+    display:flex;
 
-}
-
-
-/* =========================
-   PORTADA PRINCIPAL
-========================= */
-
-.hero {
-
-  text-align: center;
-  padding: 80px 20px;
+    min-height:100vh;
 
 }
 
+/*=============================
+      MENU LATERAL
+=============================*/
 
-.hero h2 {
+.sidebar{
 
-  font-size: 45px;
-  margin-bottom: 20px;
+    position:fixed;
 
-}
+    left:0;
 
+    top:0;
 
-.hero p {
+    width:270px;
 
-  font-size: 22px;
-  color: #cccccc;
+    height:100vh;
 
-}
+    background:#1b1b1b;
 
+    border-right:3px solid #2f80ed;
 
-/* BOTÓN */
+    display:flex;
 
-button {
+    flex-direction:column;
 
-  margin-top: 30px;
-  padding: 15px 35px;
-  font-size: 18px;
-  border: none;
-  border-radius: 30px;
-  background-color: #00e5ff;
-  color: #000;
-  cursor: pointer;
+    justify-content:space-between;
 
-}
+    padding:30px;
 
-
-button:hover {
-
-  transform: scale(1.05);
+    z-index:1000;
 
 }
 
+/*=============================
+            LOGO
+=============================*/
 
-/* =========================
-   SECCION JUEGOS
-========================= */
+.logo{
 
-.games {
-
-  text-align: center;
-  padding: 40px;
+    text-align:center;
 
 }
 
+.logo-icono{
 
-.game-card {
+    width:90px;
 
-  background-color: #151d35;
-  width: 300px;
-  margin: 30px auto;
-  padding: 25px;
-  border-radius: 15px;
-  border: 1px solid #00e5ff;
+    height:90px;
 
-}
+    border-radius:50%;
 
+    background:#2f80ed;
 
-.game-card:hover {
+    display:flex;
 
-  transform: translateY(-10px);
+    justify-content:center;
 
-}
+    align-items:center;
 
+    font-size:45px;
 
-/* =========================
-   PIE
-========================= */
+    margin:auto;
 
-footer {
+    margin-bottom:20px;
 
-  text-align: center;
-  padding: 20px;
-  background-color: #11182b;
-  margin-top: 50px;
+    box-shadow:0 0 20px #2f80ed;
 
 }
 
+.logo h1{
 
-/* =========================
-   CELULARES
-========================= */
+    font-size:34px;
 
-@media(max-width:700px){
+    margin-bottom:8px;
 
-  header {
-
-    flex-direction: column;
-
-  }
-
-
-  .nav-links {
-
-    margin-top: 20px;
-
-  }
-
-
-  .nav-links a {
-
-    display: block;
-    margin: 10px;
-
-  }
-
-}
-/* =========================
-   CATALOGO DE JUEGOS
-========================= */
-
-.catalogo {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-
-.catalogo h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-
-.catalogo p {
-  color: #cccccc;
-  font-size: 20px;
-}
-
-
-/* CONTENEDOR DE TARJETAS */
-
-.juegos {
-
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
+    letter-spacing:2px;
 
 }
 
+.logo p{
 
-/* TARJETAS */
+    color:#bdbdbd;
 
-.tarjeta {
-
-  background-color: #151d35;
-  width: 280px;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 2px solid #00e5ff;
-  transition: 0.3s;
-  padding-bottom: 25px;
+    font-size:14px;
 
 }
 
+/*=============================
+           MENÚ
+=============================*/
 
-.tarjeta:hover {
+.sidebar nav{
 
-  transform: translateY(-15px);
-  box-shadow: 0 0 25px #00e5ff;
-
-}
-
-
-/* IMAGEN DEL JUEGO */
-
-.tarjeta img {
-
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+    margin-top:40px;
 
 }
 
+.sidebar nav a{
 
-.tarjeta h3 {
+    display:flex;
 
-  font-size: 28px;
-  margin: 20px 0 10px;
+    align-items:center;
 
-}
+    gap:15px;
 
+    text-decoration:none;
 
-.tarjeta p {
+    color:white;
 
-  padding: 0 20px;
-  font-size: 16px;
+    padding:16px;
 
-}
+    margin-bottom:10px;
 
+    border-radius:12px;
 
-/* BOTON VER JUEGO */
+    transition:.30s;
 
-.tarjeta a {
-
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 30px;
-  background-color: #00e5ff;
-  color: black;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+    font-size:18px;
 
 }
 
+.sidebar nav a:hover{
 
-.tarjeta a:hover {
+    background:#2f80ed;
 
-  background-color: white;
+    transform:translateX(8px);
 
 }
 
+/*=============================
+        BOTON OSCURO
+=============================*/
 
-/* CELULAR */
+.modo-btn{
 
-@media(max-width:700px){
+    width:100%;
 
-  .catalogo h2 {
+    margin-top:20px;
 
-    font-size: 30px;
+    background:#2f80ed;
 
-  }
+    color:white;
 
+    border:none;
 
-  .tarjeta {
+    padding:16px;
 
-    width: 90%;
+    border-radius:12px;
 
-  }
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.modo-btn:hover{
+
+    background:#4b97ff;
+
+    transform:scale(1.03);
+
+}
+
+/*=============================
+      PARTE INFERIOR
+=============================*/
+
+.sidebar-bottom{
+
+    text-align:center;
+
+}
+
+.sidebar-bottom h3{
+
+    margin-bottom:20px;
+
+    color:#bbbbbb;
+
+}
+
+.redes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+}
+
+.redes a{
+
+    width:45px;
+
+    height:45px;
+
+    background:#2f80ed;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:20px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.redes a:hover{
+
+    transform:scale(1.2);
+
+    box-shadow:0 0 15px #2f80ed;
+
+}
+
+.contacto{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    background:#2f80ed;
+
+    transition:.3s;
+
+}
+
+.contacto:hover{
+
+    background:#4b97ff;
+
+}
+
+/*=============================
+        CONTENIDO
+=============================*/
+
+.contenido{
+
+    margin-left:270px;
+
+    width:calc(100% - 270px);
+
+    padding:45px;
+
+}
+
+/*=============================
+          HERO
+=============================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+
+    padding:70px;
+
+    border-radius:20px;
+
+    margin-bottom:50px;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#eeeeee;
+
+}
+
+/*=============================
+          SECCIONES
+=============================*/
+
+section{
+
+    margin-bottom:70px;
+
+}
+
+section h2{
+
+    font-size:34px;
+
+    margin-bottom:25px;
 
 }
