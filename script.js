@@ -64,3 +64,59 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>{
     });
 
 });
+/*=========================================
+        PESTAÑAS DE JUEGOS
+=========================================*/
+
+
+const botonesTabs = document.querySelectorAll(".tab-btn");
+
+const contenidosTabs = document.querySelectorAll(".tab-content");
+
+
+botonesTabs.forEach(boton => {
+
+
+    boton.addEventListener("click", () => {
+
+
+        // quitar selección de todos
+
+        botonesTabs.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+
+
+        // ocultar contenidos
+
+        contenidosTabs.forEach(contenido => {
+
+            contenido.classList.remove("active");
+
+        });
+
+
+
+        // activar botón elegido
+
+        boton.classList.add("active");
+
+
+
+        // mostrar contenido correspondiente
+
+        const contenidoMostrar = document.getElementById(
+            boton.dataset.tab
+        );
+
+
+        contenidoMostrar.classList.add("active");
+
+
+    });
+
+
+});
