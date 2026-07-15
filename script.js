@@ -167,39 +167,26 @@ if(cerrarImagen && visor){
 =================================*/
 
 
-// MENU DESPLEGABLE DE JUEGOS
-
 document.addEventListener("DOMContentLoaded", function(){
 
     const botonJuegos = document.querySelector(".juegos-btn");
+
     const menuJuegos = document.querySelector(".menu-juegos");
 
 
     if(botonJuegos && menuJuegos){
 
-        botonJuegos.addEventListener("click", function(){
-
-            menuJuegos.classList.toggle("activo");
-
-        });
-
-    }
-
-});
-document.addEventListener("DOMContentLoaded", function(){
-
-    const botonJuegos = document.querySelector(".juegos-btn");
-    const menuJuegos = document.querySelector(".menu-juegos");
-
-
-    if(botonJuegos && menuJuegos){
 
         botonJuegos.addEventListener("click", function(){
 
+
             menuJuegos.classList.toggle("activo");
+
 
         });
 
+
     }
+
 
 });
