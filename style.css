@@ -2023,3 +2023,19 @@ body.light .submenu-juegos a{
     color:#222;
 
 }
+/* FLECHA MENU JUEGOS */
+
+.flecha{
+
+    margin-left:auto;
+
+    transition:.3s ease;
+
+}
+
+
+.menu-juegos.activo .flecha{
+
+    transform:rotate(180deg);
+
+}
