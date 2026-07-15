@@ -161,3 +161,22 @@ cerrarImagen.addEventListener("click",()=>{
 
 
 });
+/*=================================
+      MENU JUEGOS DESPLEGABLE
+=================================*/
+
+
+const botonJuegos = document.querySelector(".juegos-btn");
+
+const menuJuegos = document.querySelector(".menu-juegos");
+
+
+if(botonJuegos){
+
+    botonJuegos.addEventListener("click",()=>{
+
+        menuJuegos.classList.toggle("activo");
+
+    });
+
+}
