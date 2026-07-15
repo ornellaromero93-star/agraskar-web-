@@ -6,45 +6,59 @@
 
 const boton = document.getElementById("modoOscuro");
 
-boton.addEventListener("click", () => {
 
-    document.body.classList.toggle("light");
+if(boton){
 
-    if(document.body.classList.contains("light")){
+    boton.addEventListener("click", () => {
 
-        boton.innerHTML =
-        '<i class="fas fa-sun"></i> <span>Modo Claro</span>';
 
-        localStorage.setItem("tema","claro");
+        document.body.classList.toggle("light");
 
-    }
 
-    else{
+        if(document.body.classList.contains("light")){
 
-        boton.innerHTML =
-        '<i class="fas fa-moon"></i> <span>Modo Oscuro</span>';
 
-        localStorage.setItem("tema","oscuro");
+            boton.innerHTML =
+            '<i class="fas fa-sun"></i> <span>Modo Claro</span>';
 
-    }
 
-});
+            localStorage.setItem("tema","claro");
 
-// CARGAR TEMA
 
-window.onload = ()=>{
+        }
+
+        else{
+
+
+            boton.innerHTML =
+            '<i class="fas fa-moon"></i> <span>Modo Oscuro</span>';
+
+
+            localStorage.setItem("tema","oscuro");
+
+
+        }
+
+
+    });
+
+
+
+    // CARGAR TEMA
 
     if(localStorage.getItem("tema")=="claro"){
 
+
         document.body.classList.add("light");
+
 
         boton.innerHTML =
         '<i class="fas fa-sun"></i> <span>Modo Claro</span>';
+
 
     }
 
 }
-
 // SCROLL SUAVE
 
 document.querySelectorAll('a[href^="#"]').forEach(link=>{
