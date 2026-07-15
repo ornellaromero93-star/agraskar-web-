@@ -166,17 +166,22 @@ cerrarImagen.addEventListener("click",()=>{
 =================================*/
 
 
-const botonJuegos = document.querySelector(".juegos-btn");
+// MENU DESPLEGABLE DE JUEGOS
 
-const menuJuegos = document.querySelector(".menu-juegos");
+document.addEventListener("DOMContentLoaded", function(){
+
+    const botonJuegos = document.querySelector(".juegos-btn");
+    const menuJuegos = document.querySelector(".menu-juegos");
 
 
-if(botonJuegos){
+    if(botonJuegos && menuJuegos){
 
-    botonJuegos.addEventListener("click",()=>{
+        botonJuegos.addEventListener("click", function(){
 
-        menuJuegos.classList.toggle("activo");
+            menuJuegos.classList.toggle("activo");
 
-    });
+        });
 
-}
+    }
+
+});
