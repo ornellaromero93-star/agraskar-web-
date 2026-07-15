@@ -1675,3 +1675,75 @@ body.light .tarjeta-relacionada{
     color:#222;
 
 }
+/*=========================================
+        GALERÍA PROFESIONAL
+=========================================*/
+
+
+.imagen-galeria{
+
+    cursor:pointer;
+
+}
+
+
+.visor-imagen{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:2000;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.85);
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.visor-imagen img{
+
+    max-width:85%;
+
+    max-height:85%;
+
+    border-radius:20px;
+
+    box-shadow:0 0 40px black;
+
+}
+
+
+.visor-imagen.activo{
+
+    display:flex;
+
+}
+
+
+.cerrar{
+
+    position:absolute;
+
+    top:40px;
+
+    right:60px;
+
+    color:white;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+}
