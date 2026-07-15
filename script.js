@@ -137,10 +137,13 @@ imagenesGaleria.forEach(imagen => {
     imagen.addEventListener("click",()=>{
 
 
-        visor.classList.add("activo");
+        if(visor && imagenGrande){
 
+            visor.classList.add("activo");
 
-        imagenGrande.src = imagen.src;
+            imagenGrande.src = imagen.src;
+
+        }
 
 
     });
@@ -149,7 +152,8 @@ imagenesGaleria.forEach(imagen => {
 });
 
 
-if(cerrarImagen){
+
+if(cerrarImagen && visor){
 
     cerrarImagen.addEventListener("click",()=>{
 
@@ -158,11 +162,6 @@ if(cerrarImagen){
     });
 
 }
-
-    visor.classList.remove("activo");
-
-
-});
 /*=================================
       MENU JUEGOS DESPLEGABLE
 =================================*/
