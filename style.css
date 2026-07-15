@@ -1958,3 +1958,68 @@ body.light .tarjeta-relacionada{
     padding:12px;
 
 }
+/*=================================
+      DESPLEGABLE JUEGOS FIX
+=================================*/
+
+
+.menu-juegos{
+
+    width:100%;
+
+}
+
+
+.submenu-juegos{
+
+    display:none;
+
+    margin-top:5px;
+
+    padding-left:15px;
+
+}
+
+
+
+.menu-juegos.activo .submenu-juegos{
+
+    display:block;
+
+}
+
+
+
+.submenu-juegos a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+
+
+.submenu-juegos a:hover{
+
+    background:#2f80ed;
+
+}
+
+
+
+/* MODO CLARO */
+
+body.light .submenu-juegos a{
+
+    color:#222;
+
+}
