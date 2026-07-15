@@ -177,8 +177,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
         botonJuegos.addEventListener("click", function(){
 
-            alert("El botón Juegos funciona");
-
             menuJuegos.classList.toggle("activo");
 
         });
