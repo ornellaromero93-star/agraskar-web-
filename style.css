@@ -1917,3 +1917,17 @@ body.light .tarjeta-relacionada{
     transform:rotate(180deg);
 
 }
+/* PRUEBA MENU JUEGOS */
+
+.submenu-juegos{
+
+    display:none;
+
+}
+
+
+.menu-juegos.activo .submenu-juegos{
+
+    display:block;
+
+}
