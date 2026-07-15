@@ -2039,3 +2039,54 @@ body.light .submenu-juegos a{
     transform:rotate(180deg);
 
 }
+/* ESTILO SUBMENU */
+
+.submenu-juegos{
+
+    background:rgba(47,128,237,.10);
+
+    border-radius:12px;
+
+    margin-top:8px;
+
+    padding:8px;
+
+}
+
+
+.submenu-juegos a{
+
+    transition:.3s;
+
+}
+
+
+.submenu-juegos a:hover{
+
+    transform:translateX(8px);
+
+}
+/* MODO CLARO MENU LATERAL */
+
+
+body.light .juegos-btn{
+
+    color:#222;
+
+}
+
+
+body.light .modo-btn{
+
+    background:#2f80ed;
+
+    color:white;
+
+}
+
+
+body.light .modo-btn:hover{
+
+    background:#4b97ff;
+
+}
