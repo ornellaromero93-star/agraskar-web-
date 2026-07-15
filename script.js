@@ -167,9 +167,15 @@ imagenesGaleria.forEach(imagen => {
 });
 
 
+if(cerrarImagen){
 
-cerrarImagen.addEventListener("click",()=>{
+    cerrarImagen.addEventListener("click",()=>{
 
+        visor.classList.remove("activo");
+
+    });
+
+}
 
     visor.classList.remove("activo");
 
