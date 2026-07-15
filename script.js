@@ -120,3 +120,44 @@ botonesTabs.forEach(boton => {
 
 
 });
+/*=========================================
+        VISOR DE GALERÍA
+=========================================*/
+
+
+const imagenesGaleria = document.querySelectorAll(".imagen-galeria");
+
+const visor = document.getElementById("visorImagen");
+
+const imagenGrande = document.getElementById("imagenGrande");
+
+const cerrarImagen = document.querySelector(".cerrar");
+
+
+
+imagenesGaleria.forEach(imagen => {
+
+
+    imagen.addEventListener("click",()=>{
+
+
+        visor.classList.add("activo");
+
+
+        imagenGrande.src = imagen.src;
+
+
+    });
+
+
+});
+
+
+
+cerrarImagen.addEventListener("click",()=>{
+
+
+    visor.classList.remove("activo");
+
+
+});
