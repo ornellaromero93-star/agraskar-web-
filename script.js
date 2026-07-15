@@ -170,23 +170,19 @@ if(cerrarImagen && visor){
 document.addEventListener("DOMContentLoaded", function(){
 
     const botonJuegos = document.querySelector(".juegos-btn");
-
     const menuJuegos = document.querySelector(".menu-juegos");
-  
+
 
     if(botonJuegos && menuJuegos){
 
-
         botonJuegos.addEventListener("click", function(){
 
+            alert("El botón Juegos funciona");
 
             menuJuegos.classList.toggle("activo");
 
-    console.log("Menú juegos clickeado");
         });
 
-
     }
-
 
 });
