@@ -4,503 +4,396 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Agraskar</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agraskar</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
 
-
 <body>
 
-<div class="contenedor">
+    <div class="contenedor">
+
+        <!-- ==========================================
+                    MENÚ LATERAL
+        =========================================== -->
+
+        <aside class="sidebar">
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <div class="logo-icono">
+
+                    <img src="imagenes/logo.png"
+                         alt="Logo de Agraskar">
+
+                </div>
+
+                <h1>Agraskar</h1>
+
+            </div>
+
+            <!-- Navegación -->
+
+            <nav>
+
+                <!-- Juegos -->
+
+                <div class="menu-juegos">
+
+                    <button class="juegos-btn"
+                            type="button"
+                            aria-label="Abrir menú de juegos">
+
+                        <i class="fas fa-gamepad"></i>
+
+                        <span>Juegos</span>
+
+                        <i class="fas fa-chevron-down flecha"></i>
+
+                    </button>
+
+                    <div class="submenu-juegos">
+
+                        <a href="#publicados">
+                            ⭐ Juegos Publicados
+                        </a>
+
+                        <a href="#editorial">
+                            🔎 Juegos Buscando Editorial
+                        </a>
+
+                        <a href="#online">
+                            🌐 Juega Online
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Imprimibles -->
+
+                <a href="#imprimibles">
+
+                    <i class="fas fa-print"></i>
+
+                    <span>Imprimibles</span>
+
+                </a>
+
+                <!-- Modo oscuro -->
+
+                <button id="modoOscuro"
+                        class="modo-btn"
+                        aria-label="Cambiar modo oscuro">
+
+                    <i class="fas fa-moon"></i>
+
+                    <span>Modo Oscuro</span>
+
+                </button>
+
+            </nav>
+
+            <!-- Parte inferior -->
+
+            <div class="sidebar-bottom">
+
+                <h3>Seguinos</h3>
+
+                <div class="redes">
+
+                    <a href="#"
+                       aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                       aria-label="Facebook">
+
+                        <i class="fab fa-facebook"></i>
+
+                    </a>
+
+                    <a href="#"
+                       aria-label="YouTube">
+
+                        <i class="fab fa-youtube"></i>
+
+                    </a>
+
+                    <a href="#"
+                       aria-label="TikTok">
+
+                        <i class="fab fa-tiktok"></i>
+
+                    </a>
+
+                </div>
+
+                <a href="#contacto"
+                   class="contacto">
+
+                    <i class="fas fa-envelope"></i>
+
+                    Contacto
+
+                </a>
+
+            </div>
+
+        </aside>
+                <!-- ==========================================
+                    CONTENIDO PRINCIPAL
+        =========================================== -->
+
+        <main class="contenido">
+
+            <!-- ==========================================
+                            INICIO
+            =========================================== -->
+
+            <section id="inicio" class="hero">
+
+                <h2>
+                    Bienvenido a Agraskar
+                </h2>
+
+                <p>
+                    Tu plataforma para descubrir juegos,
+                    divertirte y encontrar material imprimible.
+                </p>
+
+            </section>
 
 
-    <!-- ==========================
-            MENU LATERAL
-    =========================== -->
+            <!-- ==========================================
+                            JUEGOS
+            =========================================== -->
+
+            <section id="juegos" class="catalogo">
+
+                <h2>
+                    🎮 Juegos
+                </h2>
+
+                <p>
+                    Explorá nuestras diferentes categorías de juegos.
+                </p>
 
 
-    <aside class="sidebar">
+                <!-- ===============================
+                    JUEGOS PUBLICADOS
+                ================================ -->
 
-<div class="logo">
+                <h3 id="publicados" class="subtitulo-juegos">
+                    ⭐ Juegos Publicados
+                </h3>
 
-    <div class="logo-icono">
-        <img src="img/logo.png" alt="Agraskar">
+                <div class="juegos">
+
+                    <!-- Omelette Express -->
+
+                    <div class="tarjeta">
+
+                        <img
+                            src="imagenes/omelette-express.jpg"
+                            alt="Omelette Express"
+                            loading="lazy">
+
+                        <h3>
+                            🍳 Omelette Express
+                        </h3>
+
+                        <p>
+                            Juego de cocina y estrategia donde
+                            deberás preparar deliciosos omelettes
+                            y superar diferentes desafíos.
+                        </p>
+
+                        <a href="juegos/omelette-express.html">
+
+                            Ver juego
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Puzzle -->
+
+                    <div class="tarjeta">
+
+                        <img
+                            src="imagenes/puzzle.jpg"
+                            alt="Puzzle"
+                            loading="lazy">
+
+                        <h3>
+                            🧩 Puzzle
+                        </h3>
+
+                        <p>
+                            Resolvé desafíos y entrená tu mente.
+                        </p>
+
+                        <a href="juegos/puzzle.html">
+
+                            Jugar
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===============================
+                    BUSCANDO EDITORIAL
+                ================================ -->
+
+                <h3 id="editorial" class="subtitulo-juegos">
+                    🔎 Juegos Buscando Editorial
+                </h3>
+
+                <div class="juegos">
+
+                    <div class="tarjeta">
+
+                        <img
+                            src="imagenes/proyecto.jpg"
+                            alt="Proyecto"
+                            loading="lazy">
+
+                        <h3>
+                            🎮 Próximo proyecto
+                        </h3>
+
+                        <p>
+                            Juego en desarrollo buscando
+                            editorial o equipo de publicación.
+                        </p>
+
+                        <a href="#">
+
+                            Ver proyecto
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===============================
+                        JUEGA ONLINE
+                ================================ -->
+
+                <h3 id="online" class="subtitulo-juegos">
+                    🌐 Juega Online
+                </h3>
+
+                <div class="juegos">
+
+                    <div class="tarjeta">
+
+                        <img
+                            src="imagenes/trivia.jpg"
+                            alt="Trivia Online"
+                            loading="lazy">
+
+                        <h3>
+                            🧠 Trivia Online
+                        </h3>
+
+                        <p>
+                            Respondé preguntas y conseguí puntos.
+                        </p>
+
+                        <a href="juegos/trivia.html">
+
+                            Jugar ahora
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==========================================
+                        IMPRIMIBLES
+            =========================================== -->
+
+            <section id="imprimibles" class="imprimibles">
+
+                <h2>
+                    🖨 Imprimibles
+                </h2>
+
+                <p>
+                    Próximamente encontrarás actividades,
+                    juegos y materiales para descargar.
+                </p>
+
+            </section>
+
+
+            <!-- ==========================================
+                          CONTACTO
+            =========================================== -->
+
+            <section id="contacto" class="contacto-section">
+
+                <h2>
+                    📞 Contacto
+                </h2>
+
+                <p>
+                    ¿Querés comunicarte con nosotros?
+                </p>
+
+                <p>
+                    📧 agraskar@hotmail.com
+                </p>
+
+            </section>
+                        <!-- ==========================================
+                            FOOTER
+            =========================================== -->
+
+            <footer>
+
+                <p>
+
+                    &copy; 2026 Agraskar - Todos los derechos reservados.
+
+                </p>
+
+            </footer>
+
+        </main>
+
     </div>
 
-    <h1>Agraskar</h1>
-
-</div>
-
-
-<!-- MENÚ JUEGOS DESPLEGABLE -->
-
-
-<div class="menu-juegos">
-
-        <button class="juegos-btn" type="button">
-
-    <i class="fas fa-gamepad"></i>
-
-    <span>Juegos</span>
-
-    <i class="fas fa-chevron-down flecha"></i>
-
-</button>
-
-    <div class="submenu-juegos">
-
-        <a href="#publicados">
-            ⭐ Juegos Publicados
-        </a>
-
-        <a href="#editorial">
-            🔎 Juegos Buscando Editorial
-        </a>
-
-        <a href="#online">
-            🌐 Juega Online
-        </a>
-
-    </div>
-
-</div>
-
-
-
-            <a href="#imprimibles">
-                <i class="fas fa-print"></i>
-                Imprimibles
-            </a>
-
-
-
-            <button id="modoOscuro" class="modo-btn">
-
-                <i class="fas fa-moon"></i>
-
-                <span>
-                    Modo Oscuro
-                </span>
-
-            </button>
-
-
-        </nav>
-
-
-
-        <div class="sidebar-bottom">
-
-
-            <h3>Seguinos</h3>
-
-
-
-            <div class="redes">
-
-
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-
-
-                <a href="#">
-                    <i class="fab fa-youtube"></i>
-                </a>
-
-
-                <a href="#">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-
-
-            </div>
-
-
-
-            <a href="#contacto" class="contacto">
-
-                <i class="fas fa-envelope"></i>
-
-                Contacto
-
-            </a>
-
-
-        </div>
-
-
-    </aside>
-
-
-
-
-    <!-- ==========================
-              CONTENIDO
-    =========================== -->
-
-
-    <main class="contenido">
-
-
-
-        <!-- INICIO -->
-
-
-        <section id="inicio" class="hero">
-
-
-            <h2>
-                Bienvenido a Agraskar
-            </h2>
-
-
-            <p>
-                Tu plataforma para descubrir juegos,
-                divertirte y encontrar material imprimible.
-            </p>
-
-
-        </section>
-
-
-
-
-
-
-        <!-- ==========================
-                JUEGOS
-        =========================== -->
-
-
-        <section id="juegos" class="catalogo">
-
-
-
-            <h2>
-                🎮 Juegos
-            </h2>
-
-
-
-            <p>
-                Explorá nuestras diferentes categorías de juegos.
-            </p>
-
-
-
-
-
-            <!-- JUEGOS PUBLICADOS -->
-
-
-            <h3 id="publicados" class="subtitulo-juegos">
-    ⭐ Juegos Publicados
-</h3>
-
-
-
-            <div class="juegos">
-
-
-
-
-
-                <!-- OMELETTE EXPRESS -->
-
-
-                <div class="tarjeta">
-
-
-                    <img src="imagenes/omelette-express.jpg"
-                    alt="Omelette Express">
-
-
-                    <h3>
-                        🍳 Omelette Express
-                    </h3>
-
-
-                    <p>
-
-                        Juego de cocina y estrategia donde
-                        deberás preparar deliciosos omelettes
-                        y superar diferentes desafíos.
-
-                    </p>
-
-
-
-                    <a href="juegos/omelette-express.html">
-
-                        Ver juego
-
-                    </a>
-
-
-
-                </div>
-
-
-
-
-
-
-                <!-- PUZZLE -->
-
-
-                <div class="tarjeta">
-
-
-                    <img src="imagenes/puzzle.jpg"
-                    alt="Puzzle">
-
-
-                    <h3>
-                        🧩 Puzzle
-                    </h3>
-
-
-                    <p>
-
-                        Resolvé desafíos y entrená tu mente.
-
-                    </p>
-
-
-                    <a href="juegos/puzzle.html">
-
-                        Jugar
-
-                    </a>
-
-
-                </div>
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <!-- BUSCANDO EDITORIAL -->
-
-
-          <h3 id="editorial" class="subtitulo-juegos">
-    🔎 Juegos Buscando Editorial
-</h3>
-
-
-
-            <div class="juegos">
-
-
-
-                <div class="tarjeta">
-
-
-                    <img src="imagenes/proyecto.jpg"
-                    alt="Proyecto">
-
-
-                    <h3>
-                        🎮 Próximo proyecto
-                    </h3>
-
-
-                    <p>
-
-                        Juego en desarrollo buscando
-                        editorial o equipo de publicación.
-
-                    </p>
-
-
-
-                    <a href="#">
-
-                        Ver proyecto
-
-                    </a>
-
-
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-            <!-- JUEGA ONLINE -->
-
-
-      <h3 id="online" class="subtitulo-juegos">
-    🌐 Juega Online
-</h3>
-
-
-
-
-            <div class="juegos">
-
-
-
-                <div class="tarjeta">
-
-
-                    <img src="imagenes/trivia.jpg"
-                    alt="Trivia">
-
-
-                    <h3>
-                        🧠 Trivia Online
-                    </h3>
-
-
-                    <p>
-
-                        Respondé preguntas y conseguí puntos.
-
-                    </p>
-
-
-
-                    <a href="juegos/trivia.html">
-
-                        Jugar ahora
-
-                    </a>
-
-
-                </div>
-
-
-
-            </div>
-
-
-
-        </section>
-
-
-
-
-
-
-
-
-        <!-- IMPRIMIBLES -->
-
-
-        <section id="imprimibles" class="imprimibles">
-
-
-            <h2>
-                🖨 Imprimibles
-            </h2>
-
-
-            <p>
-
-                Próximamente encontrarás actividades,
-                juegos y materiales para descargar.
-
-            </p>
-
-
-        </section>
-
-
-
-
-
-
-
-
-        <!-- CONTACTO -->
-
-
-        <section id="contacto" class="contacto-section">
-
-
-            <h2>
-                📞 Contacto
-            </h2>
-
-
-            <p>
-
-                ¿Querés comunicarte con nosotros?
-
-            </p>
-
-
-            <p>
-
-                📧 contacto@agraskar.com
-
-            </p>
-
-
-        </section>
-
-
-
-
-
-
-
-
-        <footer>
-
-
-            <p>
-
-                © 2026 Agraskar - Todos los derechos reservados.
-
-            </p>
-
-
-        </footer>
-
-
-
-
-    </main>
-
-
-
-</div>
-
-
-
-
-
-<script src="script.js"></script>
-
-
+    <!-- ==========================================
+                    JAVASCRIPT
+    =========================================== -->
+
+    <script src="script.js"></script>
 
 </body>
 
