@@ -387,20 +387,51 @@
 </div>
 
 
-<!-- VENTANA GRANDE -->
+<!-- =====================================
+            VISOR DE IMÁGENES
+====================================== -->
 
 <div class="visor-imagen" id="visorImagen">
+
+    <!-- Botón cerrar -->
 
     <span class="cerrar">
         ✖
     </span>
 
-    <img id="imagenGrande">
+    <!-- Flecha izquierda -->
+
+    <button id="anteriorImagen" class="flecha-visor izquierda">
+
+        ❮
+
+    </button>
+
+    <!-- Imagen -->
+
+    <img id="imagenGrande" alt="Imagen del juego">
+
+    <!-- Flecha derecha -->
+
+    <button id="siguienteImagen" class="flecha-visor derecha">
+
+        ❯
+
+    </button>
+
+    <!-- Contador -->
+
+    <div class="contador-imagen">
+
+        <span id="contadorActual">1</span>
+
+        /
+
+        <span id="contadorTotal">5</span>
+
+    </div>
 
 </div>
-        </section>
-
-
 
         <!-- ===========================
                 VIDEOS
