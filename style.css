@@ -75,15 +75,16 @@ body{
     text-align:center;
 }
 
-.logo-icono{
+.logo-icono img{
 
-    width:110px;
-    height:110px;
+    width:100%;
+    height:100%;
 
-    margin:0 auto 20px;
+    object-fit:cover;
 
     border-radius:50%;
 
+}
     background:#2f80ed;
 
     display:flex;
