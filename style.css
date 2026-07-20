@@ -1,6 +1,12 @@
-/*=========================================
-            AGRASKAR
-=========================================*/
+/*==================================================
+                    AGRASKAR
+                style.css - Parte 1
+==================================================*/
+
+
+/*==================================================
+                    RESET GENERAL
+==================================================*/
 
 *{
     margin:0;
@@ -13,77 +19,68 @@ html{
 }
 
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:#121212;
-
-    color:white;
-
+    color:#ffffff;
     overflow-x:hidden;
-
 }
 
-/*=============================
-      CONTENEDOR GENERAL
-=============================*/
+
+/*==================================================
+                CONTENEDOR GENERAL
+==================================================*/
 
 .contenedor{
-
     display:flex;
-
     min-height:100vh;
-
 }
 
-/*=============================
-      MENU LATERAL
-=============================*/
+
+/*==================================================
+                  MENÚ LATERAL
+==================================================*/
 
 .sidebar{
 
     position:fixed;
 
+    top:0;
     left:0;
 
-    top:0;
-
     width:270px;
-
     height:100vh;
 
     background:#1b1b1b;
 
     border-right:3px solid #2f80ed;
-  
-overflow-y:auto;
 
     display:flex;
-
     flex-direction:column;
-
     justify-content:space-between;
 
     padding:30px;
+
+    overflow-y:auto;
 
     z-index:1000;
 
 }
 
-/*=============================
-            LOGO
-=============================*/
+
+/*==================================================
+                      LOGO
+==================================================*/
 
 .logo{
-
     text-align:center;
-
 }
 
 .logo-icono{
 
     width:110px;
     height:110px;
+
+    margin:0 auto 20px;
 
     border-radius:50%;
 
@@ -93,13 +90,12 @@ overflow-y:auto;
     justify-content:center;
     align-items:center;
 
-    margin:auto;
-    margin-bottom:20px;
+    overflow:hidden;
 
     box-shadow:0 0 25px #2f80ed;
 
-    overflow:hidden;
 }
+
 .logo-icono img{
 
     width:90%;
@@ -108,29 +104,14 @@ overflow-y:auto;
     object-fit:contain;
 
 }
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:45px;
-
-    margin:auto;
-
-    margin-bottom:20px;
-
-    box-shadow:0 0 20px #2f80ed;
-
-}
 
 .logo h1{
 
     font-size:34px;
 
-    margin-bottom:8px;
-
     letter-spacing:2px;
+
+    margin-bottom:8px;
 
 }
 
@@ -142,9 +123,10 @@ overflow-y:auto;
 
 }
 
-/*=============================
-           MENÚ
-=============================*/
+
+/*==================================================
+                  NAVEGACIÓN
+==================================================*/
 
 .sidebar nav{
 
@@ -152,7 +134,8 @@ overflow-y:auto;
 
 }
 
-.sidebar nav a{
+.sidebar nav a,
+.juegos-btn{
 
     display:flex;
 
@@ -160,23 +143,30 @@ overflow-y:auto;
 
     gap:15px;
 
-    text-decoration:none;
-
-    color:white;
+    width:100%;
 
     padding:16px;
 
-    margin-bottom:10px;
+    border:none;
 
     border-radius:12px;
 
-    transition:.30s;
+    background:none;
+
+    color:#ffffff;
 
     font-size:18px;
 
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:.30s;
+
 }
 
-.sidebar nav a:hover{
+.sidebar nav a:hover,
+.juegos-btn:hover{
 
     background:#2f80ed;
 
@@ -184,9 +174,87 @@ overflow-y:auto;
 
 }
 
-/*=============================
-        BOTON OSCURO
-=============================*/
+
+/*==================================================
+                MENÚ DESPLEGABLE
+==================================================*/
+
+.menu-juegos{
+
+    width:100%;
+
+}
+
+.flecha{
+
+    margin-left:auto;
+
+    transition:.3s ease;
+
+}
+
+.menu-juegos.activo .flecha{
+
+    transform:rotate(180deg);
+
+}
+
+.submenu-juegos{
+
+    display:none;
+
+    margin-top:8px;
+
+    margin-bottom:15px;
+
+    padding:8px;
+
+    padding-left:10px;
+
+    border-radius:12px;
+
+    background:rgba(47,128,237,.10);
+
+}
+
+.menu-juegos.activo .submenu-juegos{
+
+    display:block;
+
+}
+
+.submenu-juegos a{
+
+    display:block;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    color:#cccccc;
+
+    font-size:15px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.submenu-juegos a:hover{
+
+    background:#2f80ed;
+
+    color:white;
+
+    transform:translateX(8px);
+
+}
+
+
+/*==================================================
+                BOTÓN MODO OSCURO
+==================================================*/
 
 .modo-btn{
 
@@ -194,21 +262,21 @@ overflow-y:auto;
 
     margin-top:20px;
 
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
     background:#2f80ed;
 
     color:white;
 
-    border:none;
-
-    padding:16px;
-
-    border-radius:12px;
+    font-size:17px;
 
     cursor:pointer;
 
-    font-size:17px;
-
-    transition:.3s;
+    transition:.30s;
 
 }
 
@@ -220,9 +288,10 @@ overflow-y:auto;
 
 }
 
-/*=============================
-      PARTE INFERIOR
-=============================*/
+
+/*==================================================
+              PARTE INFERIOR SIDEBAR
+==================================================*/
 
 .sidebar-bottom{
 
@@ -237,6 +306,11 @@ overflow-y:auto;
     color:#bbbbbb;
 
 }
+
+
+/*==================================================
+                    REDES
+==================================================*/
 
 .redes{
 
@@ -253,44 +327,42 @@ overflow-y:auto;
 .redes a{
 
     width:45px;
-
     height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     background:#2f80ed;
 
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
     color:white;
 
-    font-size:20px;
+    border-radius:50%;
 
     text-decoration:none;
 
-    transition:.3s;
+    font-size:20px;
+
+    transition:.30s;
 
 }
 
 .redes a:hover{
 
-    transform:scale(1.2);
+    transform:scale(1.20);
 
     box-shadow:0 0 15px #2f80ed;
 
 }
 
+
+/*==================================================
+                    CONTACTO
+==================================================*/
+
 .contacto{
 
     display:inline-block;
-
-    text-decoration:none;
-
-    color:white;
 
     padding:12px 20px;
 
@@ -298,7 +370,11 @@ overflow-y:auto;
 
     background:#2f80ed;
 
-    transition:.3s;
+    color:white;
+
+    text-decoration:none;
+
+    transition:.30s;
 
 }
 
@@ -308,9 +384,10 @@ overflow-y:auto;
 
 }
 
-/*=============================
-        CONTENIDO
-=============================*/
+
+/*==================================================
+                  CONTENIDO
+==================================================*/
 
 .contenido{
 
@@ -322,9 +399,10 @@ overflow-y:auto;
 
 }
 
-/*=============================
-          HERO
-=============================*/
+
+/*==================================================
+                    HERO
+==================================================*/
 
 .hero{
 
@@ -332,9 +410,9 @@ overflow-y:auto;
 
     padding:70px;
 
-    border-radius:20px;
-
     margin-bottom:50px;
+
+    border-radius:20px;
 
     text-align:center;
 
@@ -356,9 +434,10 @@ overflow-y:auto;
 
 }
 
-/*=============================
-          SECCIONES
-=============================*/
+
+/*==================================================
+                  SECCIONES
+==================================================*/
 
 section{
 
@@ -373,9 +452,78 @@ section h2{
     margin-bottom:25px;
 
 }
-/*=========================================
-        TARJETAS DE JUEGOS
-=========================================*/
+
+
+/*==================================================
+          SUBTÍTULOS DE CATEGORÍAS
+==================================================*/
+
+.subtitulo-juegos{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:70px;
+
+    margin-bottom:30px;
+
+    padding:18px 25px;
+
+    border-radius:15px;
+
+    font-size:32px;
+
+    border-left:6px solid #2f80ed;
+
+    background:linear-gradient(
+        90deg,
+        rgba(47,128,237,.25),
+        transparent
+    );
+
+    animation:aparecer .8s ease;
+
+}
+
+.subtitulo-juegos:nth-of-type(1){
+
+    color:#5ca5ff;
+
+}
+
+.subtitulo-juegos:nth-of-type(2){
+
+    color:#c084fc;
+
+    border-left-color:#a855f7;
+
+    background:linear-gradient(
+        90deg,
+        rgba(168,85,247,.25),
+        transparent
+    );
+
+}
+
+.subtitulo-juegos:nth-of-type(3){
+
+    color:#4ade80;
+
+    border-left-color:#22c55e;
+
+    background:linear-gradient(
+        90deg,
+        rgba(34,197,94,.25),
+        transparent
+    );
+
+}
+/*==================================================
+                TARJETAS DE JUEGOS
+==================================================*/
 
 .juegos{
 
@@ -391,25 +539,63 @@ section h2{
 
 .tarjeta{
 
+    position:relative;
+
     background:#1f1f1f;
 
     border-radius:18px;
 
     overflow:hidden;
 
-    transition:.35s;
+    border:1px solid rgba(255,255,255,.08);
 
     box-shadow:0 10px 25px rgba(0,0,0,.35);
 
-    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+
+}
+
+.tarjeta::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #2f80ed,
+        #a855f7
+    );
 
 }
 
 .tarjeta:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px) scale(1.02);
 
     box-shadow:0 18px 40px rgba(47,128,237,.45);
+
+}
+
+.tarjeta:hover::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:18px;
+
+    pointer-events:none;
+
+    box-shadow:0 0 25px rgba(47,128,237,.5);
 
 }
 
@@ -433,9 +619,9 @@ section h2{
 
 .tarjeta h3{
 
-    font-size:26px;
-
     margin:20px;
+
+    font-size:26px;
 
 }
 
@@ -455,19 +641,19 @@ section h2{
 
     margin:0 20px 25px;
 
+    padding:14px;
+
     text-align:center;
 
     text-decoration:none;
 
-    background:#2f80ed;
+    font-weight:bold;
 
     color:white;
 
-    padding:14px;
+    background:#2f80ed;
 
     border-radius:12px;
-
-    font-weight:bold;
 
     transition:.3s;
 
@@ -479,9 +665,10 @@ section h2{
 
 }
 
-/*=========================================
-        IMPRIMIBLES
-=========================================*/
+
+/*==================================================
+                IMPRIMIBLES
+==================================================*/
 
 .imprimibles{
 
@@ -497,17 +684,18 @@ section h2{
 
 .imprimibles p{
 
-    color:#cccccc;
-
     margin-top:15px;
+
+    color:#cccccc;
 
     line-height:1.7;
 
 }
 
-/*=========================================
-        CONTACTO
-=========================================*/
+
+/*==================================================
+                    CONTACTO
+==================================================*/
 
 .contacto-section{
 
@@ -527,17 +715,18 @@ section h2{
 
 }
 
-/*=========================================
-            FOOTER
-=========================================*/
+
+/*==================================================
+                    FOOTER
+==================================================*/
 
 footer{
 
     margin-top:60px;
 
-    text-align:center;
-
     padding:30px;
+
+    text-align:center;
 
     color:#9d9d9d;
 
@@ -545,9 +734,10 @@ footer{
 
 }
 
-/*=========================================
-        BARRA DE SCROLL
-=========================================*/
+
+/*==================================================
+                BARRA DE SCROLL
+==================================================*/
 
 ::-webkit-scrollbar{
 
@@ -575,9 +765,10 @@ footer{
 
 }
 
-/*=========================================
-        ANIMACIONES
-=========================================*/
+
+/*==================================================
+                    ANIMACIONES
+==================================================*/
 
 @keyframes aparecer{
 
@@ -608,419 +799,202 @@ footer{
 
 }
 
-/*=========================================
-        RESPONSIVE
-=========================================*/
+
+/*==================================================
+                    RESPONSIVE
+==================================================*/
 
 @media(max-width:900px){
 
-.sidebar{
+    .sidebar{
 
-    width:220px;
+        width:220px;
 
-}
+    }
 
-.contenido{
+    .contenido{
 
-    margin-left:220px;
+        margin-left:220px;
 
-    width:calc(100% - 220px);
+        width:calc(100% - 220px);
 
-    padding:30px;
+        padding:30px;
 
-}
+    }
 
-.hero{
+    .hero{
 
-    padding:45px;
+        padding:45px;
 
-}
+    }
 
-.hero h2{
+    .hero h2{
 
-    font-size:36px;
+        font-size:36px;
 
-}
+    }
 
 }
 
 @media(max-width:768px){
 
-.sidebar{
+    .contenedor{
 
-    position:relative;
+        flex-direction:column;
 
-    width:100%;
+    }
 
-    height:auto;
+    .sidebar{
 
-    border-right:none;
+        position:relative;
 
-    border-bottom:3px solid #2f80ed;
+        width:100%;
+
+        height:auto;
+
+        border-right:none;
+
+        border-bottom:3px solid #2f80ed;
+
+    }
+
+    .contenido{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+    .sidebar nav{
+
+        margin-top:25px;
+
+    }
+
+    .sidebar nav a{
+
+        justify-content:center;
+
+    }
+
+    .hero{
+
+        padding:35px 20px;
+
+    }
+
+    .hero h2{
+
+        font-size:30px;
+
+    }
+
+    section h2{
+
+        font-size:28px;
+
+    }
+
+    .tarjeta img{
+
+        height:200px;
+
+    }
+
+    .redes{
+
+        margin-top:20px;
+
+    }
 
 }
 
-.contenedor{
 
-    flex-direction:column;
-
-}
-
-.contenido{
-
-    margin-left:0;
-
-    width:100%;
-
-}
-
-.sidebar nav{
-
-    margin-top:25px;
-
-}
-
-.sidebar nav a{
-
-    justify-content:center;
-
-}
-
-.redes{
-
-    margin-top:20px;
-
-}
-
-.hero{
-
-    padding:35px 20px;
-
-}
-
-.hero h2{
-
-    font-size:30px;
-
-}
-
-section h2{
-
-    font-size:28px;
-
-}
-
-.tarjeta img{
-
-    height:200px;
-
-}
-
-}
-/*=============================
-      MODO CLARO
-=============================*/
+/*==================================================
+                    MODO CLARO
+==================================================*/
 
 body.light{
 
-    background:#f2f2f2;
-
-    color:#222;
-
-}
-
-body.light .sidebar{
-
-    background:white;
-
-    border-right:3px solid #2f80ed;
-
-}
-
-body.light .tarjeta{
-
-    background:white;
-
-    color:#222;
-
-}
-
-body.light .tarjeta p{
-
-    color:#555;
-
-}
-
-body.light .hero{
-
-    background:linear-gradient(135deg,#6fb1fc,#4364f7);
-
-}
-
-body.light .imprimibles,
-body.light .contacto-section{
-
-    background:white;
-
-}
-
-body.light footer{
-
-    color:#666;
-
-}
-
-body.light .sidebar nav a{
-
-    color:#222;
-
-}
-
-body.light .logo p{
-
-    color:#666;
-
-}
-/*=================================
-            MODO CLARO
-=================================*/
-
-body.light{
     background:#f5f7fb;
+
     color:#222;
+
 }
 
 /* Sidebar */
 
 body.light .sidebar{
+
     background:#ffffff;
+
     border-right:3px solid #2f80ed;
+
 }
 
 body.light .logo h1{
+
     color:#222;
+
 }
 
 body.light .logo p{
+
     color:#666;
+
 }
 
-body.light .sidebar nav a{
+body.light .sidebar nav a,
+body.light .juegos-btn{
+
     color:#222;
+
 }
 
 body.light .sidebar nav a:hover{
+
     color:white;
+
 }
 
 body.light .sidebar-bottom h3{
+
     color:#444;
+
 }
 
 /* Hero */
 
 body.light .hero{
+
     background:linear-gradient(135deg,#7ab6ff,#4b97ff);
+
 }
 
 /* Tarjetas */
 
 body.light .tarjeta{
-    background:white;
+
+    background:#ffffff;
+
     color:#222;
+
 }
 
 body.light .tarjeta h3{
+
     color:#222;
+
 }
 
 body.light .tarjeta p{
+
     color:#555;
-}
-
-/* Secciones */
-
-body.light .imprimibles,
-body.light .contacto-section{
-    background:white;
-    color:#222;
-}
-
-/* Footer */
-
-body.light footer{
-    color:#666;
-    border-top:1px solid #ddd;
-}
-/*=========================================
-        CATEGORÍAS DE JUEGOS
-=========================================*/
-
-
-.subtitulo-juegos{
-
-    margin-top:70px;
-
-    margin-bottom:30px;
-
-    font-size:32px;
-
-    padding:18px 25px;
-
-    border-radius:15px;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-    background:linear-gradient(
-        90deg,
-        rgba(47,128,237,.25),
-        transparent
-    );
-
-    border-left:6px solid #2f80ed;
-
-    animation:aparecer .8s ease;
 
 }
 
-
-
-/*=========================================
-        JUEGOS PUBLICADOS
-=========================================*/
-
-
-.subtitulo-juegos:nth-of-type(1){
-
-    border-left-color:#2f80ed;
-
-    color:#5ca5ff;
-
-}
-
-
-
-/*=========================================
-    JUEGOS BUSCANDO EDITORIAL
-=========================================*/
-
-
-.subtitulo-juegos:nth-of-type(2){
-
-    border-left-color:#a855f7;
-
-    color:#c084fc;
-
-    background:linear-gradient(
-        90deg,
-        rgba(168,85,247,.25),
-        transparent
-    );
-
-}
-
-
-
-/*=========================================
-            JUEGA ONLINE
-=========================================*/
-
-
-.subtitulo-juegos:nth-of-type(3){
-
-    border-left-color:#22c55e;
-
-    color:#4ade80;
-
-    background:linear-gradient(
-        90deg,
-        rgba(34,197,94,.25),
-        transparent
-    );
-
-}
-
-
-
-/*=========================================
-        TARJETAS PREMIUM
-=========================================*/
-
-
-.tarjeta{
-
-    position:relative;
-
-}
-
-
-
-.tarjeta::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    height:5px;
-
-    background:linear-gradient(
-        90deg,
-        #2f80ed,
-        #a855f7
-    );
-
-}
-
-
-
-.tarjeta:hover{
-
-    transform:
-    translateY(-12px)
-    scale(1.02);
-
-}
-
-
-
-/*=========================================
-        EFECTO LUZ
-=========================================*/
-
-
-.tarjeta:hover::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    border-radius:18px;
-
-    box-shadow:
-    0 0 25px rgba(47,128,237,.5);
-
-    pointer-events:none;
-
-}
-
-
-
-/*=========================================
-        MODO CLARO
-=========================================*/
-
+/* Subtítulos */
 
 body.light .subtitulo-juegos{
 
@@ -1039,10 +1013,52 @@ body.light .subtitulo-juegos:nth-of-type(3){
     background:#ecfff2;
 
 }
-/*=============================
-       PAGINA DE JUEGO
-=============================*/
 
+/* Secciones */
+
+body.light .imprimibles,
+body.light .contacto-section{
+
+    background:#ffffff;
+
+    color:#222;
+
+}
+
+/* Menú desplegable */
+
+body.light .submenu-juegos a{
+
+    color:#222;
+
+}
+
+/* Botón */
+
+body.light .modo-btn{
+
+    color:white;
+
+}
+
+body.light .modo-btn:hover{
+
+    background:#4b97ff;
+
+}
+
+/* Footer */
+
+body.light footer{
+
+    color:#666;
+
+    border-top:1px solid #ddd;
+
+}
+/*==================================================
+        PÁGINA INDIVIDUAL DEL JUEGO
+==================================================*/
 
 .pagina-juego{
 
@@ -1054,35 +1070,39 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
-
 .pagina-juego h1{
+
+    margin:30px;
 
     text-align:center;
 
     font-size:50px;
 
-    margin:30px;
-
 }
 
-
-
 .volver{
+
+    display:inline-block;
+
+    padding:12px 20px;
+
+    background:#2f80ed;
 
     color:white;
 
     text-decoration:none;
 
-    background:#2f80ed;
-
-    padding:12px 20px;
-
     border-radius:12px;
+
+    transition:.3s;
 
 }
 
+.volver:hover{
 
+    background:#4b97ff;
+
+}
 
 .imagen-juego{
 
@@ -1100,32 +1120,26 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
-
 .descripcion-juego,
 .ficha-tecnica{
 
-    background:#1b1b1b;
+    margin-top:40px;
 
     padding:35px;
 
+    background:#1b1b1b;
+
     border-radius:20px;
 
-    margin-top:40px;
-
 }
-
-
 
 .descripcion-juego p{
 
     line-height:1.8;
 
-    color:#ddd;
+    color:#dddddd;
 
 }
-
-
 
 .ficha-tecnica li{
 
@@ -1137,25 +1151,23 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
-
 .botones-juego{
 
     display:flex;
 
     justify-content:center;
 
+    flex-wrap:wrap;
+
     gap:20px;
 
     margin:40px;
 
-    flex-wrap:wrap;
-
 }
 
-
-
 .botones-juego a{
+
+    padding:15px 25px;
 
     background:#2f80ed;
 
@@ -1163,15 +1175,11 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
     text-decoration:none;
 
-    padding:15px 25px;
-
     border-radius:12px;
 
     transition:.3s;
 
 }
-
-
 
 .botones-juego a:hover{
 
@@ -1180,31 +1188,15 @@ body.light .subtitulo-juegos:nth-of-type(3){
     box-shadow:0 10px 25px #2f80ed;
 
 }
-/*==================================================
-            PLANTILLA DE JUEGO - AGRASKAR
-==================================================*/
 
-/* ---------- Banner ---------- */
+
+/*==================================================
+                BANNER DEL JUEGO
+==================================================*/
 
 .banner-juego{
 
     position:relative;
-
-    height:350px;
-
-    border-radius:25px;
-
-    overflow:hidden;
-
-    margin-bottom:40px;
-
-    background-image:
-        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
-        url("../imagenes/juegos/omelette-express-banner.jpg");
-
-    background-size:cover;
-
-    background-position:center;
 
     display:flex;
 
@@ -1214,29 +1206,39 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
     text-align:center;
 
+    height:350px;
+
+    margin-bottom:40px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+        url("../imagenes/juegos/omelette-express-banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
 }
-
-
 
 .banner-overlay{
 
-    color:white;
-
     padding:30px;
 
+    color:white;
+
 }
-
-
 
 .banner-overlay h1{
 
-    font-size:58px;
-
     margin:20px 0 10px;
 
+    font-size:58px;
+
 }
-
-
 
 .subtitulo{
 
@@ -1246,10 +1248,6 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
-
-/* ---------- Estado ---------- */
-
 .estado{
 
     display:inline-block;
@@ -1258,15 +1256,13 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
     border-radius:40px;
 
-    font-weight:bold;
-
     font-size:14px;
+
+    font-weight:bold;
 
     letter-spacing:1px;
 
 }
-
-
 
 .publicado{
 
@@ -1277,8 +1273,9 @@ body.light .subtitulo-juegos:nth-of-type(3){
 }
 
 
-
-/* ---------- Imagen ---------- */
+/*==================================================
+                PORTADA DEL JUEGO
+==================================================*/
 
 .hero-juego{
 
@@ -1289,8 +1286,6 @@ body.light .subtitulo-juegos:nth-of-type(3){
     margin:50px 0;
 
 }
-
-
 
 .portada-juego{
 
@@ -1306,8 +1301,6 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
-
 .portada-juego:hover{
 
     transform:scale(1.02);
@@ -1315,8 +1308,9 @@ body.light .subtitulo-juegos:nth-of-type(3){
 }
 
 
-
-/* ---------- Información rápida ---------- */
+/*==================================================
+              INFORMACIÓN RÁPIDA
+==================================================*/
 
 .info-rapida{
 
@@ -1330,17 +1324,15 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
-
 .dato{
-
-    background:var(--card-color,#ffffff);
 
     padding:25px;
 
+    text-align:center;
+
     border-radius:18px;
 
-    text-align:center;
+    background:var(--card-color,#ffffff);
 
     font-size:28px;
 
@@ -1350,15 +1342,11 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
-
 .dato:hover{
 
     transform:translateY(-8px);
 
 }
-
-
 
 .dato span{
 
@@ -1371,51 +1359,47 @@ body.light .subtitulo-juegos:nth-of-type(3){
     font-weight:bold;
 
 }
-/* =========================================
-      PLANTILLA JUEGO AGRASKAR
-========================================= */
-/*=========================================
-        PESTAÑAS DEL JUEGO
-=========================================*/
 
+
+/*==================================================
+                    PESTAÑAS
+==================================================*/
 
 .tabs{
 
     display:flex;
 
-    gap:15px;
+    justify-content:center;
 
     flex-wrap:wrap;
 
-    margin:40px 0;
+    gap:15px;
 
-    justify-content:center;
+    margin:40px 0;
 
 }
 
-
 .tab-btn{
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:15px;
 
     background:#2f80ed;
 
     color:white;
 
-    border:none;
-
-    padding:15px 25px;
-
-    border-radius:15px;
-
-    cursor:pointer;
-
     font-size:16px;
 
     font-weight:bold;
 
+    cursor:pointer;
+
     transition:.3s;
 
 }
-
 
 .tab-btn:hover{
 
@@ -1425,7 +1409,6 @@ body.light .subtitulo-juegos:nth-of-type(3){
 
 }
 
-
 .tab-btn.active{
 
     background:#4b97ff;
@@ -1433,36 +1416,31 @@ body.light .subtitulo-juegos:nth-of-type(3){
 }
 
 
-
-/*=========================================
-        CONTENIDO PESTAÑAS
-=========================================*/
-
+/*==================================================
+            CONTENIDO DE PESTAÑAS
+==================================================*/
 
 .tab-content{
 
     display:none;
 
-    background:#1b1b1b;
+    margin-bottom:50px;
 
     padding:40px;
 
-    border-radius:25px;
+    background:#1b1b1b;
 
-    margin-bottom:50px;
+    border-radius:25px;
 
     animation:aparecer .5s ease;
 
 }
-
 
 .tab-content.active{
 
     display:block;
 
 }
-
-
 
 .tab-content h2{
 
@@ -1471,23 +1449,9 @@ body.light .subtitulo-juegos:nth-of-type(3){
 }
 
 
-
-/* MODO CLARO */
-
-body.light .tab-content{
-
-    background:white;
-
-    color:#222;
-
-}
-
-
-
-/*=========================================
-        TABLA FICHA
-=========================================*/
-
+/*==================================================
+                TABLA DE FICHA
+==================================================*/
 
 .tabla-ficha{
 
@@ -1497,19 +1461,17 @@ body.light .tab-content{
 
 }
 
-
 .tabla-ficha th{
 
-    text-align:left;
+    width:35%;
 
     padding:15px;
 
-    width:35%;
+    text-align:left;
 
     color:#5ca5ff;
 
 }
-
 
 .tabla-ficha td{
 
@@ -1520,19 +1482,9 @@ body.light .tab-content{
 }
 
 
-
-body.light .tabla-ficha td{
-
-    border-bottom:1px solid #ddd;
-
-}
-
-
-
-/*=========================================
-        GALERÍA
-=========================================*/
-
+/*==================================================
+                    GALERÍA
+==================================================*/
 
 .galeria{
 
@@ -1545,7 +1497,6 @@ body.light .tabla-ficha td{
     margin-top:30px;
 
 }
-
 
 .galeria img{
 
@@ -1561,144 +1512,11 @@ body.light .tabla-ficha td{
 
 }
 
-
 .galeria img:hover{
 
     transform:scale(1.05);
 
 }
-
-
-
-/*=========================================
-        BOTON PDF
-=========================================*/
-
-
-.boton-descarga{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    margin-top:25px;
-
-    background:#e63946;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:15px 25px;
-
-    border-radius:15px;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-
-.boton-descarga:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 10px 25px rgba(230,57,70,.5);
-
-}
-
-
-
-/*=========================================
-        JUEGOS RELACIONADOS
-=========================================*/
-
-
-.relacionados{
-
-    margin-top:60px;
-
-}
-
-
-.juegos-relacionados{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:30px;
-
-}
-
-
-.tarjeta-relacionada{
-
-    background:#1f1f1f;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    padding-bottom:20px;
-
-}
-
-
-.tarjeta-relacionada img{
-
-    width:100%;
-
-    height:180px;
-
-    object-fit:cover;
-
-}
-
-
-.tarjeta-relacionada h3,
-.tarjeta-relacionada p{
-
-    margin:15px;
-
-}
-
-
-.tarjeta-relacionada a{
-
-    display:block;
-
-    margin:15px;
-
-    text-align:center;
-
-    padding:12px;
-
-    background:#2f80ed;
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:10px;
-
-}
-
-
-body.light .tarjeta-relacionada{
-
-    background:white;
-
-    color:#222;
-
-}
-/*=========================================
-        GALERÍA PROFESIONAL
-=========================================*/
-
 
 .imagen-galeria{
 
@@ -1707,30 +1525,33 @@ body.light .tarjeta-relacionada{
 }
 
 
+/*==================================================
+              VISOR DE IMÁGENES
+==================================================*/
+
 .visor-imagen{
 
     display:none;
 
     position:fixed;
 
-    z-index:2000;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    height:100%;
-
-    background:rgba(0,0,0,.85);
+    inset:0;
 
     justify-content:center;
 
     align-items:center;
 
+    background:rgba(0,0,0,.85);
+
+    z-index:2000;
+
 }
 
+.visor-imagen.activo{
+
+    display:flex;
+
+}
 
 .visor-imagen img{
 
@@ -1743,14 +1564,6 @@ body.light .tarjeta-relacionada{
     box-shadow:0 0 40px black;
 
 }
-
-
-.visor-imagen.activo{
-
-    display:flex;
-
-}
-
 
 .cerrar{
 
@@ -1767,368 +1580,132 @@ body.light .tarjeta-relacionada{
     cursor:pointer;
 
 }
-/*=================================
-        MENU JUEGOS DESPLEGABLE
-=================================*/
-/* MENU DESPLEGABLE JUEGOS */
-
-.submenu-juegos{
-
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .4s ease;
-
-}
 
 
-.menu-juegos.activo .submenu-juegos{
+/*==================================================
+                BOTÓN DESCARGA PDF
+==================================================*/
 
-    max-height:200px;
+.boton-descarga{
 
-}
-
-
-.juegos-btn{
-
-    background:none;
-    border:none;
-    color:white;
-    width:100%;
-    display:flex;
-    align-items:center;
-    gap:15px;
-    padding:16px;
-    font-size:18px;
-    cursor:pointer;
-    border-radius:12px;
-
-}
-
-
-.juegos-btn:hover{
-
-    background:#2f80ed;
-
-}
-
-
-.flecha{
-
-    margin-left:auto;
-
-    transition:.3s;
-
-}
-
-
-.menu-juegos.activo .flecha{
-
-    transform:rotate(180deg);
-
-}
-/*=================================
-      MENU JUEGOS DESPLEGABLE FIX
-=================================*/
-
-
-.menu-juegos{
-    width:100%;
-}
-
-
-.juegos-btn{
-
-    width:100%;
-
-    display:flex;
+    display:inline-flex;
 
     align-items:center;
 
-    gap:15px;
+    gap:10px;
 
-    background:none;
+    margin-top:25px;
 
-    border:none;
+    padding:15px 25px;
 
-    color:white;
-
-    padding:16px;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-    border-radius:12px;
-
-}
-
-
-.juegos-btn:hover{
-
-    background:#2f80ed;
-
-}
-
-
-.flecha{
-
-    margin-left:auto;
-
-    transition:.3s;
-
-}
-
-
-
-.submenu-juegos{
-
-    max-height:0;
-
-    overflow:hidden;
-
-    transition:max-height .4s ease;
-
-    padding-left:15px;
-
-}
-
-
-
-.submenu-juegos a{
-
-    display:block;
-
-    color:#cccccc;
-
-    text-decoration:none;
-
-    padding:12px;
-
-    font-size:15px;
-
-    border-radius:10px;
-
-}
-
-
-
-.submenu-juegos a:hover{
-
-    background:#2f80ed;
-
-    color:white;
-
-}
-
-
-
-/* CUANDO SE ABRE */
-
-.menu-juegos.activo .submenu-juegos{
-
-    max-height:250px;
-
-}
-
-
-
-.menu-juegos.activo .flecha{
-
-    transform:rotate(180deg);
-
-}
-/* PRUEBA MENU JUEGOS */
-
-.submenu-juegos{
-
-    display:none;
-
-}
-
-
-.menu-juegos.activo .submenu-juegos{
-
-    display:block;
-
-}
-.menu-juegos.activo .submenu-juegos{
-
-    display:block !important;
-
-}
-
-
-.submenu-juegos{
-
-    display:none;
-
-    background:#222;
-
-    border-radius:10px;
-
-    margin-top:5px;
-
-}
-
-
-.submenu-juegos a{
-
-    display:block;
-
-    padding:12px;
-
-}
-/*=================================
-      DESPLEGABLE JUEGOS FIX
-=================================*/
-
-
-.menu-juegos{
-
-    width:100%;
-
-}
-
-
-.submenu-juegos{
-
-    display:none;
-
-    margin-top:5px;
-
-    padding-left:15px;
-
-}
-
-
-
-.menu-juegos.activo .submenu-juegos{
-
-    display:block;
-
-}
-
-
-
-.submenu-juegos a{
-
-    display:block;
+    background:#e63946;
 
     color:white;
 
     text-decoration:none;
 
-    padding:12px;
+    font-weight:bold;
 
-    border-radius:10px;
-
-    font-size:15px;
-
-}
-
-
-
-.submenu-juegos a:hover{
-
-    background:#2f80ed;
-
-}
-
-
-
-/* MODO CLARO */
-
-body.light .submenu-juegos a{
-
-    color:#222;
-
-}
-/* FLECHA MENU JUEGOS */
-
-.flecha{
-
-    margin-left:auto;
-
-    transition:.3s ease;
-
-}
-
-
-.menu-juegos.activo .flecha{
-
-    transform:rotate(180deg);
-
-}
-/* ESTILO SUBMENU */
-
-.submenu-juegos{
-
-    background:rgba(47,128,237,.10);
-
-    border-radius:12px;
-
-    margin-top:8px;
-
-    padding:8px;
-
-}
-
-
-.submenu-juegos a{
+    border-radius:15px;
 
     transition:.3s;
 
 }
 
+.boton-descarga:hover{
 
-.submenu-juegos a:hover{
+    transform:translateY(-5px);
 
-    transform:translateX(8px);
+    box-shadow:0 10px 25px rgba(230,57,70,.5);
 
 }
-/* MODO CLARO MENU LATERAL */
 
 
-body.light .juegos-btn{
+/*==================================================
+            JUEGOS RELACIONADOS
+==================================================*/
+
+.relacionados{
+
+    margin-top:60px;
+
+}
+
+.juegos-relacionados{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.tarjeta-relacionada{
+
+    overflow:hidden;
+
+    padding-bottom:20px;
+
+    background:#1f1f1f;
+
+    border-radius:18px;
+
+}
+
+.tarjeta-relacionada img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+.tarjeta-relacionada h3,
+.tarjeta-relacionada p{
+
+    margin:15px;
+
+}
+
+.tarjeta-relacionada a{
+
+    display:block;
+
+    margin:15px;
+
+    padding:12px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#2f80ed;
+
+    border-radius:10px;
+
+}
+
+
+/*==================================================
+          MODO CLARO - PÁGINA JUEGO
+==================================================*/
+
+body.light .tab-content,
+body.light .tarjeta-relacionada{
+
+    background:white;
 
     color:#222;
 
 }
 
+body.light .tabla-ficha td{
 
-body.light .modo-btn{
-
-    background:#2f80ed;
-
-    color:white;
-
-}
-
-
-body.light .modo-btn:hover{
-
-    background:#4b97ff;
-
-}
-
-/*=================================
-      SUBMENU JUEGOS MEJORADO
-=================================*/
-
-
-.submenu-juegos{
-
-    padding-left:10px;
-
-    margin-bottom:15px;
-
-}
-
-
-.submenu-juegos a{
-
-    font-size:15px;
-
-    padding:12px;
+    border-bottom:1px solid #dddddd;
 
 }
