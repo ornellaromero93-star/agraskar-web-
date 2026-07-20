@@ -1699,3 +1699,116 @@ body.light .tabla-ficha td{
     border-bottom:1px solid #dddddd;
 
 }
+/*==================================================
+            CARRUSEL DEL VISOR DE IMÁGENES
+==================================================*/
+
+.flecha-visor{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:60px;
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    backdrop-filter:blur(8px);
+
+    z-index:2100;
+
+}
+
+.flecha-visor:hover{
+
+    background:#2f80ed;
+
+    transform:translateY(-50%) scale(1.10);
+
+}
+
+.izquierda{
+
+    left:40px;
+
+}
+
+.derecha{
+
+    right:40px;
+
+}
+
+/*=========================
+        CONTADOR
+=========================*/
+
+.contador-imagen{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:rgba(0,0,0,.55);
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    backdrop-filter:blur(6px);
+
+}
+
+/*=========================
+      RESPONSIVE
+=========================*/
+
+@media(max-width:768px){
+
+    .flecha-visor{
+
+        width:48px;
+        height:48px;
+
+        font-size:28px;
+
+    }
+
+    .izquierda{
+
+        left:15px;
+
+    }
+
+    .derecha{
+
+        right:15px;
+
+    }
+
+}
