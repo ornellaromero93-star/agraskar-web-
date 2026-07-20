@@ -1,186 +1,249 @@
-//=============================
-// AGRASKAR
-//=============================
+/*==================================================
+                    AGRASKAR
+                  script.js
+==================================================*/
 
-// BOTÓN MODO OSCURO
+document.addEventListener("DOMContentLoaded", () => {
 
-const boton = document.getElementById("modoOscuro");
+    /*==================================================
+                    MODO CLARO / OSCURO
+    ==================================================*/
 
+    const botonModo = document.getElementById("modoOscuro");
 
-if(boton){
+    if (botonModo) {
 
-    boton.addEventListener("click", () => {
+        // Cargar el tema guardado
 
+        const temaGuardado = localStorage.getItem("tema");
 
-        document.body.classList.toggle("light");
+        if (temaGuardado === "claro") {
 
+            document.body.classList.add("light");
 
-        if(document.body.classList.contains("light")){
+            actualizarBotonModo(true);
 
+        } else {
 
-            boton.innerHTML =
-            '<i class="fas fa-sun"></i> <span>Modo Claro</span>';
-
-
-            localStorage.setItem("tema","claro");
-
-
-        }
-
-        else{
-
-
-            boton.innerHTML =
-            '<i class="fas fa-moon"></i> <span>Modo Oscuro</span>';
-
-
-            localStorage.setItem("tema","oscuro");
-
+            actualizarBotonModo(false);
 
         }
 
+        // Cambiar tema
 
-    });
+        botonModo.addEventListener("click", () => {
 
+            document.body.classList.toggle("light");
 
+            const modoClaro = document.body.classList.contains("light");
 
-    // CARGAR TEMA
+            actualizarBotonModo(modoClaro);
 
-    if(localStorage.getItem("tema")=="claro"){
+            localStorage.setItem(
+                "tema",
+                modoClaro ? "claro" : "oscuro"
+            );
 
-
-        document.body.classList.add("light");
-
-
-        boton.innerHTML =
-        '<i class="fas fa-sun"></i> <span>Modo Claro</span>';
-
+        });
 
     }
 
-}
+    /**
+     * Actualiza el texto e icono del botón de tema.
+     */
 
-/*=========================================
-        PESTAÑAS DE JUEGOS
-=========================================*/
+    function actualizarBotonModo(modoClaro) {
 
+        if (!botonModo) return;
 
-const botonesTabs = document.querySelectorAll(".tab-btn");
+        if (modoClaro) {
 
-const contenidosTabs = document.querySelectorAll(".tab-content");
+            botonModo.innerHTML = `
+                <i class="fas fa-sun"></i>
+                <span>Modo Claro</span>
+            `;
 
+        } else {
 
-botonesTabs.forEach(boton => {
-
-
-    boton.addEventListener("click", () => {
-
-
-        // quitar selección de todos
-
-        botonesTabs.forEach(btn => {
-
-            btn.classList.remove("active");
-
-        });
-
-
-
-        // ocultar contenidos
-
-        contenidosTabs.forEach(contenido => {
-
-            contenido.classList.remove("active");
-
-        });
-
-
-
-        // activar botón elegido
-
-        boton.classList.add("active");
-
-
-
-        // mostrar contenido correspondiente
-
-        const contenidoMostrar = document.getElementById(
-            boton.dataset.tab
-        );
-
-
-        contenidoMostrar.classList.add("active");
-
-
-    });
-
-
-});
-/*=========================================
-        VISOR DE GALERÍA
-=========================================*/
-
-
-const imagenesGaleria = document.querySelectorAll(".imagen-galeria");
-
-const visor = document.getElementById("visorImagen");
-
-const imagenGrande = document.getElementById("imagenGrande");
-
-const cerrarImagen = document.querySelector(".cerrar");
-
-
-
-imagenesGaleria.forEach(imagen => {
-
-
-    imagen.addEventListener("click",()=>{
-
-
-        if(visor && imagenGrande){
-
-            visor.classList.add("activo");
-
-            imagenGrande.src = imagen.src;
+            botonModo.innerHTML = `
+                <i class="fas fa-moon"></i>
+                <span>Modo Oscuro</span>
+            `;
 
         }
 
-
-    });
-
-
-});
-
-
-
-if(cerrarImagen && visor){
-
-    cerrarImagen.addEventListener("click",()=>{
-
-        visor.classList.remove("activo");
-
-    });
-
-}
-/*=================================
-      MENU JUEGOS DESPLEGABLE
-=================================*/
-
-
-document.addEventListener("DOMContentLoaded", function(){
+    }
+        /*==================================================
+                MENÚ DESPLEGABLE DE JUEGOS
+    ==================================================*/
 
     const botonJuegos = document.querySelector(".juegos-btn");
     const menuJuegos = document.querySelector(".menu-juegos");
 
+    if (botonJuegos && menuJuegos) {
 
-    if(botonJuegos && menuJuegos){
-
-        botonJuegos.addEventListener("click", function(){
+        botonJuegos.addEventListener("click", () => {
 
             menuJuegos.classList.toggle("activo");
 
         });
 
     }
+
+
+    /*==================================================
+                    PESTAÑAS DE JUEGOS
+    ==================================================*/
+
+    const botonesTabs = document.querySelectorAll(".tab-btn");
+    const contenidosTabs = document.querySelectorAll(".tab-content");
+
+    if (botonesTabs.length > 0 && contenidosTabs.length > 0) {
+
+        botonesTabs.forEach((tab) => {
+
+            tab.addEventListener("click", () => {
+
+                // Desactivar todos los botones
+
+                botonesTabs.forEach((boton) => {
+
+                    boton.classList.remove("active");
+
+                });
+
+                // Ocultar todos los contenidos
+
+                contenidosTabs.forEach((contenido) => {
+
+                    contenido.classList.remove("active");
+
+                });
+
+                // Activar el botón seleccionado
+
+                tab.classList.add("active");
+
+                // Mostrar el contenido correspondiente
+
+                const contenidoMostrar = document.getElementById(tab.dataset.tab);
+
+                if (contenidoMostrar) {
+
+                    contenidoMostrar.classList.add("active");
+
+                }
+
+            });
+
+        });
+
+    }
+        /*==================================================
+                    VISOR DE GALERÍA
+    ==================================================*/
+
+    const imagenesGaleria = document.querySelectorAll(".imagen-galeria");
+
+    const visorImagen = document.getElementById("visorImagen");
+
+    const imagenGrande = document.getElementById("imagenGrande");
+
+    const botonCerrarImagen = document.querySelector(".cerrar");
+
+
+    if (
+        imagenesGaleria.length > 0 &&
+        visorImagen &&
+        imagenGrande
+    ) {
+
+
+        imagenesGaleria.forEach((imagen) => {
+
+
+            imagen.addEventListener("click", () => {
+
+
+                visorImagen.classList.add("activo");
+
+
+                imagenGrande.src = imagen.src;
+
+                imagenGrande.alt = imagen.alt;
+
+
+            });
+
+
+        });
+
+
+    }
+
+
+
+    // Cerrar con botón X
+
+    if (botonCerrarImagen && visorImagen) {
+
+
+        botonCerrarImagen.addEventListener("click", () => {
+
+
+            visorImagen.classList.remove("activo");
+
+
+        });
+
+
+    }
+
+
+
+    // Cerrar haciendo clic fuera de la imagen
+
+    if (visorImagen) {
+
+
+        visorImagen.addEventListener("click", (evento) => {
+
+
+            if (evento.target === visorImagen) {
+
+
+                visorImagen.classList.remove("activo");
+
+
+            }
+
+
+        });
+
+
+    }
+
+
+
+    // Cerrar con tecla ESC
+
+    document.addEventListener("keydown", (evento) => {
+
+
+        if (
+            evento.key === "Escape" &&
+            visorImagen &&
+            visorImagen.classList.contains("activo")
+        ) {
+
+
+            visorImagen.classList.remove("activo");
+
+
+        }
+
+
+    });
+
 
 });
