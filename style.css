@@ -1812,3 +1812,54 @@ body.light .tabla-ficha td{
     }
 
 }
+/*=========================================
+        FLECHAS DEL VISOR
+=========================================*/
+
+.flecha-galeria{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.45);
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.flecha-galeria:hover{
+
+    background:#2f80ed;
+
+    transform:translateY(-50%) scale(1.1);
+
+}
+
+.izquierda{
+
+    left:30px;
+
+}
+
+.derecha{
+
+    right:30px;
+
+}
