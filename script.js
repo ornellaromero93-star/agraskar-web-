@@ -139,87 +139,165 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
-      /*==================================================
-                    VISOR DE GALERÍA
-    ==================================================*/
+   /*==================================================
+                VISOR DE GALERÍA
+==================================================*/
 
-    const imagenesGaleria = document.querySelectorAll(".imagen-galeria");
+const imagenesGaleria = document.querySelectorAll(".imagen-galeria");
 
-    const visorImagen = document.getElementById("visorImagen");
+const visorImagen = document.getElementById("visorImagen");
+const imagenGrande = document.getElementById("imagenGrande");
 
-    const imagenGrande = document.getElementById("imagenGrande");
+const botonCerrarImagen = document.querySelector(".cerrar");
 
-    const botonCerrarImagen = document.querySelector(".cerrar");
+const botonIzquierda = document.querySelector(".izquierda");
+const botonDerecha = document.querySelector(".derecha");
 
-
-    if (
-        imagenesGaleria.length > 0 &&
-        visorImagen &&
-        imagenGrande
-    ) {
+let imagenActual = 0;
 
 
-        imagenesGaleria.forEach((imagen) => {
+// Abrir imagen
+if (
+    imagenesGaleria.length > 0 &&
+    visorImagen &&
+    imagenGrande
+) {
 
+    imagenesGaleria.forEach((imagen, indice) => {
 
-            imagen.addEventListener("click", () => {
+        imagen.addEventListener("click", () => {
 
+            imagenActual = indice;
 
-                visorImagen.classList.add("activo");
+            mostrarImagen();
 
-
-                imagenGrande.src = imagen.src;
-
-                imagenGrande.alt = imagen.alt;
-
-
-            });
-
+            visorImagen.classList.add("activo");
 
         });
 
+    });
 
-    }
-
-
-
-    // Cerrar con botón X
-
-    if (botonCerrarImagen && visorImagen) {
+}
 
 
-        botonCerrarImagen.addEventListener("click", () => {
+// Mostrar imagen actual
+function mostrarImagen() {
 
+    imagenGrande.src = imagenesGaleria[imagenActual].src;
+
+    imagenGrande.alt = imagenesGaleria[imagenActual].alt;
+
+}
+
+
+// Flecha derecha
+if (botonDerecha) {
+
+    botonDerecha.addEventListener("click", () => {
+
+        imagenActual++;
+
+        if (imagenActual >= imagenesGaleria.length) {
+
+            imagenActual = 0;
+
+        }
+
+        mostrarImagen();
+
+    });
+
+}
+
+
+// Flecha izquierda
+if (botonIzquierda) {
+
+    botonIzquierda.addEventListener("click", () => {
+
+        imagenActual--;
+
+        if (imagenActual < 0) {
+
+            imagenActual = imagenesGaleria.length - 1;
+
+        }
+
+        mostrarImagen();
+
+    });
+
+}
+
+
+// Cerrar
+if (botonCerrarImagen && visorImagen) {
+
+    botonCerrarImagen.addEventListener("click", () => {
+
+        visorImagen.classList.remove("activo");
+
+    });
+
+}
+
+
+// Cerrar haciendo clic fuera
+if (visorImagen) {
+
+    visorImagen.addEventListener("click", (evento) => {
+
+        if (evento.target === visorImagen) {
 
             visorImagen.classList.remove("activo");
 
+        }
 
-        });
+    });
 
+}
+
+
+// Teclado
+document.addEventListener("keydown", (evento) => {
+
+    if (!visorImagen.classList.contains("activo")) return;
+
+    if (evento.key === "Escape") {
+
+        visorImagen.classList.remove("activo");
 
     }
 
+    if (evento.key === "ArrowRight") {
 
+        imagenActual++;
 
-    // Cerrar haciendo clic fuera de la imagen
+        if (imagenActual >= imagenesGaleria.length) {
 
-    if (visorImagen) {
+            imagenActual = 0;
 
+        }
 
-        visorImagen.addEventListener("click", (evento) => {
+        mostrarImagen();
 
+    }
 
-            if (evento.target === visorImagen) {
+    if (evento.key === "ArrowLeft") {
 
+        imagenActual--;
 
-                visorImagen.classList.remove("activo");
+        if (imagenActual < 0) {
 
+            imagenActual = imagenesGaleria.length - 1;
 
-            }
+        }
 
+        mostrarImagen();
 
-        });
+    }
 
+});
 
     }
 
