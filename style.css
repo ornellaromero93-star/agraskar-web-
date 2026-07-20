@@ -75,37 +75,44 @@ body{
     text-align:center;
 }
 
+.logo-icono{
+
+    width:180px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
 .logo-icono img{
 
     width:100%;
-    height:100%;
 
-    object-fit:cover;
-
-    border-radius:50%;
-
-}
-    background:#2f80ed;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    overflow:hidden;
-
-    box-shadow:0 0 25px #2f80ed;
-
-}
-
-.logo-icono img{
-
-    width:90%;
-    height:90%;
+    height:auto;
 
     object-fit:contain;
 
-}
+    filter:
+        drop-shadow(0 0 8px rgba(47,128,237,.8))
+        drop-shadow(0 0 18px rgba(47,128,237,.5));
 
+    transition:.35s;
+
+}
+.logo-icono img:hover{
+
+    transform:scale(1.05);
+
+    filter:
+        drop-shadow(0 0 10px rgba(47,128,237,1))
+        drop-shadow(0 0 25px rgba(47,128,237,.8));
+
+}
 .logo h1{
 
     font-size:34px;
