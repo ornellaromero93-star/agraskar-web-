@@ -98,8 +98,8 @@ body{
     object-fit:contain;
 
     filter:
-        drop-shadow(0 0 8px rgba(47,128,237,.8))
-        drop-shadow(0 0 18px rgba(47,128,237,.5));
+    drop-shadow(0 0 6px rgba(47,128,237,.45))
+    drop-shadow(0 0 14px rgba(47,128,237,.25));
 
     transition:.35s;
 
