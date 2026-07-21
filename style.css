@@ -570,10 +570,22 @@ section h2{
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 10px;
-  background: #18b65b; 
   border-radius: 20px;
   font-size: 12px;
   font-weight: bold;
+  color: white;
+}
+* Colores por tipo de juego */
+.etiqueta.publicado {
+  background: #18b65b;   /* verde */
+}
+
+.etiqueta.editorial {
+  background: #a855f7;   /* violeta */
+}
+
+.etiqueta.online {
+  background: #2f80ed;   /* azul */
 }
 
 .info-juego h3 {
