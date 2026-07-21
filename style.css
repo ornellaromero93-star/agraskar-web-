@@ -976,23 +976,23 @@ body.light .hero{
 
 /* Tarjetas */
 
-body.light .tarjeta{
+body.light .tarjeta-juego{
 
     background:#ffffff;
 
-    color:#222;
+}
+
+
+body.light .info-juego h3{
+
+    color:white;
 
 }
 
-body.light .tarjeta h3{
 
-    color:#222;
+body.light .info-juego p{
 
-}
-
-body.light .tarjeta p{
-
-    color:#555;
+    color:#dddddd;
 
 }
 
