@@ -1770,3 +1770,20 @@ body.light .tabla-ficha td{
     backdrop-filter:blur(6px);
 
 }
+/* ==========================================
+   Carrusel simple para las secciones de juegos
+========================================== */
+
+.carrusel {
+  display: flex;              /* tarjetas en fila */
+  gap: 20px;                  /* espacio entre ellas */
+  overflow-x: auto;           /* scroll horizontal */
+  scroll-snap-type: x mandatory; /* efecto de encaje */
+  padding: 10px;
+}
+
+.carrusel .tarjeta-juego {
+  flex: 0 0 auto;             /* cada tarjeta mantiene su ancho */
+  scroll-snap-align: start;   /* se alinea al inicio al hacer scroll */
+}
+
