@@ -298,30 +298,3 @@ document.addEventListener("keydown", (evento) => {
     }
 
 });
-
-    }
-
-
-
-    // Cerrar con tecla ESC
-
-    document.addEventListener("keydown", (evento) => {
-
-
-        if (
-            evento.key === "Escape" &&
-            visorImagen &&
-            visorImagen.classList.contains("activo")
-        ) {
-
-
-            visorImagen.classList.remove("activo");
-
-
-        }
-
-
-    });
-
-
-});
