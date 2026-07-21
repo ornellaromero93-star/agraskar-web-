@@ -477,39 +477,37 @@ section h2{
     animation:aparecer .8s ease;
 
 }
-
+/* juegos publicados (verde) */
 .subtitulo-juegos:nth-of-type(1){
 
-    color:#18b65b; 
-
+    color: #18b65b;
+  border-left: 6px solid #18b65b;
+  background: linear-gradient(
+    90deg,
+    rgba(24,182,91,.25),
+    transparent
+  );
 }
-
+/* Buscando Editorial (violeta) */
 .subtitulo-juegos:nth-of-type(2){
 
-    color:#c084fc;
-
-    border-left-color:#a855f7;
-
-    background:linear-gradient(
-        90deg,
-        rgba(168,85,247,.25),
-        transparent
-    );
-
+  color: #a855f7;
+  border-left: 6px solid #a855f7;
+  background: linear-gradient(
+    90deg,
+    rgba(168,85,247,.25),
+    transparent
+  );
 }
-
+/* juega online (naranja */
 .subtitulo-juegos:nth-of-type(3){
-
-    color: #ff7f32;
-
-    border-left-color:#22c55e;
-
+    color:#ff7f32;                  /* naranja */
+    border-left-color:#ff7f32;      /* borde naranja */
     background:linear-gradient(
         90deg,
-        rgba(34,197,94,.25),
+        rgba(255,127,50,.25),        /* degradado naranja */
         transparent
     );
-
 }
 
 /*==================================================
