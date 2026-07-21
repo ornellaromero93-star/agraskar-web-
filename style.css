@@ -588,16 +588,15 @@ section h2{
 
     width:100%;
 
-    padding:25px;
+    padding:20px;
 
     background:
     linear-gradient(
         transparent,
-        rgba(0,0,0,.95)
+        rgba(0,0,0,.75)
     );
 
 }
-
 
 
 .etiqueta{
