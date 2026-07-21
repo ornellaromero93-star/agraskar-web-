@@ -539,36 +539,24 @@ section h2{
 
 .tarjeta-juego {
   display: flex;
-  flex-direction: column; /* Imagen arriba, texto debajo */
+  flex-direction: column;
   align-items: center;
-  width: 280px; /* ajustá según tu diseño */
-  border-radius: 20px;
+  width: 250px;        /* más angosta */
+  border-radius: 25px; /* más redondeada */
   overflow: hidden;
   background: #222;
-  box-shadow: 0 10px 25px rgba(0,0,0,.5);
+  box-shadow: 0 8px 20px rgba(0,0,0,.4);
   transition: .35s;
-}
-
-.tarjeta-juego:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 18px 40px rgba(47,128,237,.45);
 }
 
 .tarjeta-juego img {
   width: 100%;
-  height: auto;
+  max-height: 180px;   /* controla la proporción */
   object-fit: cover;
-  transition: .5s;
-}
-
-.tarjeta-juego:hover img {
-  transform: scale(1.08);
 }
 
 .info-juego {
-  position: static;   /* ya no absoluto */
-  background: none;   /* quitamos el degradado */
-  padding: 15px;
+  padding: 20px;
   text-align: center;
 }
 
