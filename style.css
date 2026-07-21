@@ -1206,7 +1206,7 @@ body.light footer{
 
     background-image:
         linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-        url("../imagenes/juegos/omelette-express-banner.jpg");
+        url("imagenes/juegos/omelette-express-banner.jpg");
 
     background-size:cover;
 
