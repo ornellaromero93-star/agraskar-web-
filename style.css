@@ -1877,3 +1877,30 @@ body.light .tabla-ficha td{
   scroll-snap-align: start;   /* se alinea al inicio al hacer scroll */
 }
 
+  /*=================================
+        JUEGO ONLINE pantalla completa
+=================================*/
+
+.juego-online{
+
+    width:100%;
+
+    margin:40px 0;
+
+}
+
+
+.juego-online iframe{
+
+    width:100%;
+
+    height:85vh;
+
+    min-height:700px;
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
