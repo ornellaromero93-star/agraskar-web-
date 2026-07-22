@@ -584,7 +584,15 @@ section h2{
 
     height:220px;
 
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
     overflow:hidden;
+
+    background:#111;
 
 }
 
@@ -595,12 +603,11 @@ section h2{
 
     height:100%;
 
-    object-fit:cover;
+    object-fit:contain;
 
     display:block;
 
 }
-
 
 
 /* Información debajo de la imagen */
