@@ -1981,6 +1981,37 @@ body.light .tabla-ficha td{
   scroll-snap-align: start;   /* se alinea al inicio al hacer scroll */
 }
 
+/* Tamaño normal del juego */
+
+#juegoFrame{
+
+    width:900px;
+
+    max-width:100%;
+
+    height:600px;
+
+    border:none;
+
+    border-radius:15px;
+
+}
+
+
+/* Pantalla completa */
+
+#contenedorJuego.fullscreen iframe{
+
+    width:95vw;
+
+    height:90vh;
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
  /*=============================
         JUEGO pantalla completa con x
 =============================*/
