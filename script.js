@@ -299,30 +299,22 @@ document.addEventListener("keydown", (evento) => {
 
 });
   });
-function abrirJuego(){
+function abrirJuego() {
 
-    const juego = document.getElementById("contenedorJuego");
+    const juego = document.getElementById("juegoFrame");
 
-    juego.classList.add("fullscreen");
+    if (juego.requestFullscreen) {
 
-}
+        juego.requestFullscreen();
 
+    } else if (juego.webkitRequestFullscreen) {
 
-function cerrarJuego(){
+        juego.webkitRequestFullscreen();
 
-    const juego = document.getElementById("contenedorJuego");
+    } else if (juego.msRequestFullscreen) {
 
-    juego.classList.remove("fullscreen");
-
-}
-
-
-document.addEventListener("keydown", function(e){
-
-    if(e.key === "Escape"){
-
-        cerrarJuego();
+        juego.msRequestFullscreen();
 
     }
 
-});
+}
