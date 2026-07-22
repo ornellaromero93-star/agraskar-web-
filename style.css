@@ -1270,7 +1270,7 @@ body.light footer{
 
     background:#ff7f32;
     color:white;
-
+}
 
 /*==================================================
                 PORTADA DEL JUEGO
@@ -1903,31 +1903,6 @@ body.light .tabla-ficha td{
     border-radius:20px;
 
 }
-/*=============================
-        JUEGO FULLSCREEN
-=============================*/
-
-
-.juego-online{
-
-    margin:50px 0;
-
-}
-
-
-.juego-online iframe{
-
-    width:100%;
-
-    height:700px;
-
-    border:none;
-
-    border-radius:20px;
-
-}
-
-
 .boton-fullscreen{
 
     background:#2f80ed;
