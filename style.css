@@ -1266,6 +1266,10 @@ body.light footer{
     color:white;
 
 }
+.estado.online{
+
+    background:#ff7f32;
+    color:white;
 
 
 /*==================================================
