@@ -213,10 +213,19 @@
 <!-- ===========================
         JUEGO ONLINE
 =========================== -->
-
 <section class="juego-online">
 
     <div id="contenedorJuego">
+
+        <button
+            id="cerrarFullscreen"
+            type="button"
+            onclick="cerrarJuego()">
+
+            <i class="fas fa-times"></i>
+
+        </button>
+
 
         <iframe
             id="juegoFrame"
@@ -224,7 +233,9 @@
             allowfullscreen>
         </iframe>
 
+
     </div>
+
 
     <button
         class="boton-fullscreen"
@@ -236,15 +247,7 @@
         Jugar en pantalla completa
 
     </button>
-<button
-class="boton-cerrar-fullscreen"
-onclick="cerrarJuego()">
 
-<i class="fas fa-times"></i>
-
-Cerrar pantalla completa
-
-</button>
 </section>
         <!-- ===========================
                 PESTAÑAS
