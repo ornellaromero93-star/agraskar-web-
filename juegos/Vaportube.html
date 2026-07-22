@@ -1,1 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+    <meta charset="UTF-8">
+ <title>Vaportube - Agraskar</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <!-- ===========================
+            MENÚ LATERAL
+    ============================ -->
+
+    <aside class="sidebar">
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+        <div class="logo-icono">
+
+            <img src="../imagenes/logo.png"
+                 alt="Logo de Agraskar">
+
+        </div>
+
+    </div>
+
+    <!-- Navegación -->
+
+  <nav>
+
+    <!-- Inicio -->
+
+    <a href="../index.html#inicio">
+
+        <i class="fas fa-house"></i>
+
+        <span>Inicio</span>
+
+    </a>
+
+    <!-- Juegos -->
+
+    <div class="menu-juegos">
+
+            <button class="juegos-btn"
+                    type="button"
+                    aria-label="Abrir menú de juegos">
+
+                <i class="fas fa-gamepad"></i>
+
+                <span>Juegos</span>
+
+                <i class="fas fa-chevron-down flecha"></i>
+
+            </button>
+
+            <div class="submenu-juegos">
+
+                <a href="../index.html#publicados">
+                     Juegos Publicados
+                </a>
+
+                <a href="../index.html#editorial">
+                    Juegos Buscando Editorial
+                </a>
+
+                <a href="../index.html#online">
+                     Juega Online
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Imprimibles -->
+
+        <a href="../index.html#imprimibles">
+
+            <i class="fas fa-print"></i>
+
+            <span>Imprimibles</span>
+
+        </a>
+
+        <!-- Modo oscuro -->
+
+        <button id="modoOscuro"
+                class="modo-btn"
+                aria-label="Cambiar modo oscuro">
+
+            <i class="fas fa-moon"></i>
+
+            <span>Modo Oscuro</span>
+
+        </button>
+
+    </nav>
+
+    <!-- Parte inferior -->
+
+    <div class="sidebar-bottom">
+
+        <h3>Seguinos</h3>
+
+        <div class="redes">
+
+            <a href="#"
+               aria-label="Instagram">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+            <a href="#"
+               aria-label="Facebook">
+
+                <i class="fab fa-facebook"></i>
+
+            </a>
+
+            <a href="#"
+               aria-label="YouTube">
+
+                <i class="fab fa-youtube"></i>
+
+            </a>
+
+            <a href="#"
+               aria-label="TikTok">
+
+                <i class="fab fa-tiktok"></i>
+
+            </a>
+
+        </div>
+
+        <a href="../index.html#contacto"
+           class="contacto">
+
+            <i class="fas fa-envelope"></i>
+
+            Contacto
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+
+    <!-- ===========================
+            CONTENIDO
+    ============================ -->
+
+    <main class="contenido">
+
+<!-- ===========================
+        PRESENTACIÓN DEL JUEGO
+=========================== -->
+
+<section class="detalle-juego">
+
+
+    <div class="contenido-juego">
+
+        <span class="estado online">
+            ONLINE
+        </span>
+
+
+        <h1>
+            Vaportube
+        </h1>
+
+
+        <p>
+            Juego online donde deberás competir,
+            tomar decisiones rápidas y superar
+            diferentes desafíos para conseguir la victoria.
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+        JUEGO ONLINE
+=========================== -->
+
+<section class="juego-online">
+
+    <iframe
+        src="https://playingcards.io/5rbgug"
+        width="100%"
+        height="800"
+        style="border:none; border-radius:20px;">
+    </iframe>
+
+</section>
+
+        <!-- ===========================
+                PESTAÑAS
+        ============================ -->
+<div class="tabs">
+
+    <button class="tab-btn active" data-tab="como-jugar">
+
+        <i class="fas fa-gamepad"></i>
+
+        Cómo jugar
+
+    </button>
+
+
+    <button class="tab-btn" data-tab="reglas">
+
+        <i class="fas fa-book-open"></i>
+
+        Reglas
+
+    </button>
+
+
+    <button class="tab-btn" data-tab="consejos">
+
+        <i class="fas fa-lightbulb"></i>
+
+        Consejos
+
+    </button>
+
+</div>
+
+        <!-- ===========================
+            CONTENIDO DE LAS PESTAÑAS
+        ============================ -->
+
+
+
+        <!-- FICHA -->
+
+   <!-- CÓMO JUGAR -->
+
+<section id="como-jugar" class="tab-content active">
+
+    <h2>🎮 Cómo jugar</h2>
+
+
+    <div class="descripcion-juego">
+
+        <h3>Preparación</h3>
+
+        <p>
+            Ingresá al tablero online de Vaportube y reuní a los jugadores
+            para comenzar la partida.
+        </p>
+
+
+        <h3>Objetivo del juego</h3>
+
+        <p>
+            El objetivo será conseguir la mayor cantidad de puntos utilizando
+            estrategia, observación y buenas decisiones durante la partida.
+        </p>
+
+
+        <h3>Desarrollo</h3>
+
+        <p>
+            Cada jugador deberá realizar sus movimientos respetando las reglas
+            del juego y buscando superar a sus rivales.
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+      
+                <!-- ===========================
+            TAMBIÉN TE PUEDE INTERESAR
+        ============================ -->
+
+        <section class="relacionados">
+
+            <h2>🎮 También te puede interesar</h2>
+
+            <div class="juegos-relacionados">
+
+                <div class="tarjeta-relacionada">
+
+                    <img src="../imagenes/juegos/puzzle.jpg" alt="Puzzle">
+
+                    <h3>Puzzle</h3>
+
+                    <p>
+                        Un desafío para entrenar tu lógica y observación.
+                    </p>
+
+                    <a href="puzzle.html">
+                        Ver juego
+                    </a>
+
+                </div>
+
+                <div class="tarjeta-relacionada">
+
+                    <img src="../imagenes/juegos/trivia.jpg" alt="Trivia">
+
+                    <h3>Trivia</h3>
+
+                    <p>
+                        Poné a prueba tus conocimientos con cientos de preguntas.
+                    </p>
+
+                    <a href="trivia.html">
+                        Ver juego
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===========================
+            CONTACTO
+        ============================ -->
+
+        <section class="contacto-juego">
+
+            <h2> Contacto</h2>
+
+            <p>
+
+                ¿Sos una editorial, distribuidor o querés comunicarte con Agraskar?
+
+            </p>
+
+            <a href="mailto:contacto@agraskar.com" class="boton-contacto">
+
+                <i class="fas fa-envelope"></i>
+
+               agraskar@hotmail.com
+
+            </a>
+
+        </section>
+
+
+        <!-- ===========================
+            FOOTER
+        ============================ -->
+
+        <footer class="footer-juego">
+
+            <p>
+
+                © 2026 Agraskar · Todos los derechos reservados.
+
+            </p>
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+<script src="../script.js"></script>
+
+</body>
+
+</html>
