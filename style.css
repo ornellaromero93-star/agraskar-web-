@@ -565,27 +565,37 @@ section h2{
 }
 
 .etiqueta {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
+    display:inline-block;
+    padding:6px 12px;
+    margin-bottom:10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+    color:white;
 }
-* Colores por tipo de juego */
+
+
+/* Colores por tipo de juego */
+
 .etiqueta.publicado {
-  background: #18b65b;   /* verde */
+
+    background:#18b65b;   /* verde */
+
 }
+
 
 .etiqueta.editorial {
-    background:#a855f7;
+
+    background:#a855f7;   /* violeta */
+
 }
+
 
 .etiqueta.online {
-  background: #ff7f32;    /*naranja */
-}
 
+    background:#ff7f32;    /* naranja */
+
+}
 .info-juego h3 {
   margin-bottom: 8px;
   font-size: 20px;           /* más compacto */
