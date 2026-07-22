@@ -299,22 +299,36 @@ document.addEventListener("keydown", (evento) => {
 
 });
   });
+
+/*==================================================
+            JUEGO EN PANTALLA COMPLETA
+==================================================*/
+
 function abrirJuego() {
 
-    const juego = document.getElementById("juegoFrame");
+    const juego = document.getElementById("contenedorJuego");
 
-    if (juego.requestFullscreen) {
+    juego.classList.add("fullscreen");
 
-        juego.requestFullscreen();
+}
 
-    } else if (juego.webkitRequestFullscreen) {
+function cerrarJuego() {
 
-        juego.webkitRequestFullscreen();
+    const juego = document.getElementById("contenedorJuego");
 
-    } else if (juego.msRequestFullscreen) {
+    juego.classList.remove("fullscreen");
 
-        juego.msRequestFullscreen();
+}
+
+document.addEventListener("keydown", function (e) {
+
+    if (
+        e.key === "Escape" &&
+        document.getElementById("contenedorJuego").classList.contains("fullscreen")
+    ) {
+
+        cerrarJuego();
 
     }
 
-}
+});
