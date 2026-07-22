@@ -816,6 +816,31 @@ footer{
         width:100%;
 
     }
+    /* PRESENTACIÓN DEL JUEGO EN CELULAR */
+
+    .detalle-juego{
+
+        flex-direction:column;
+
+        padding:25px;
+
+    }
+
+
+    .detalle-juego .portada,
+    .detalle-juego .contenido-juego{
+
+        width:100%;
+
+    }
+
+
+    .contenido-juego h1{
+
+        font-size:35px;
+
+    }
+
 
     .sidebar nav{
 
@@ -1257,7 +1282,78 @@ body.light footer{
     transform:scale(1.02);
 
 }
+/*=========================================
+        PRESENTACIÓN DEL JUEGO
+=========================================*/
 
+
+.detalle-juego{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:50px;
+
+    margin:50px 0;
+
+    padding:40px;
+
+    background:#1b1b1b;
+
+    border-radius:25px;
+
+}
+
+
+
+.detalle-juego .portada{
+
+    width:50%;
+
+}
+
+
+
+.detalle-juego .portada img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+
+
+.contenido-juego{
+
+    width:50%;
+
+}
+
+
+
+.contenido-juego h1{
+
+    font-size:45px;
+
+    margin:20px 0;
+
+}
+
+
+
+.contenido-juego p{
+
+    color:#dddddd;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
 
 /*==================================================
               INFORMACIÓN RÁPIDA
