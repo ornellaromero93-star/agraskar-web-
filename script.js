@@ -299,4 +299,30 @@ document.addEventListener("keydown", (evento) => {
 
 });
   });
+function abrirJuego(){
 
+    const juego = document.getElementById("contenedorJuego");
+
+    juego.classList.add("fullscreen");
+
+}
+
+
+function cerrarJuego(){
+
+    const juego = document.getElementById("contenedorJuego");
+
+    juego.classList.remove("fullscreen");
+
+}
+
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+
+        cerrarJuego();
+
+    }
+
+});
