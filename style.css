@@ -578,6 +578,9 @@ section h2{
   background: #18b65b;   /* verde */
 }
 
+.etiqueta.editorial {
+    background:#a855f7;
+}
 
 .etiqueta.online {
   background: #ff7f32;    /*naranja */
