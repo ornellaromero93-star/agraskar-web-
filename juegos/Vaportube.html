@@ -216,32 +216,25 @@
 
 <section class="juego-online">
 
+    <div id="contenedorJuego">
 
-<button class="boton-fullscreen" onclick="abrirJuego()">
+        <iframe
+            id="juegoFrame"
+            src="https://playingcards.io/5rbgug"
+            allowfullscreen>
+        </iframe>
 
-    ⛶ Pantalla completa
+    </div>
 
-</button>
+    <button
+        class="boton-fullscreen"
+        type="button"
+        onclick="abrirJuego()">
 
-
-<div id="contenedorJuego">
-
-    <iframe
-        id="juegoFrame"
-        src="https://playingcards.io/5rbgug">
-    </iframe>
-
-
-    <button 
-    id="cerrarFullscreen"
-    onclick="cerrarJuego()">
-
-        ✕
+        <i class="fas fa-expand"></i>
+        Jugar en pantalla completa
 
     </button>
-
-</div>
-
 
 </section>
         <!-- ===========================
