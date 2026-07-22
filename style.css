@@ -1903,4 +1903,118 @@ body.light .tabla-ficha td{
     border-radius:20px;
 
 }
+/*=============================
+        JUEGO FULLSCREEN
+=============================*/
 
+
+.juego-online{
+
+    margin:50px 0;
+
+}
+
+
+.juego-online iframe{
+
+    width:100%;
+
+    height:700px;
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+
+.boton-fullscreen{
+
+    background:#2f80ed;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+#contenedorJuego.fullscreen{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100vw;
+
+    height:100vh;
+
+    background:#000;
+
+    z-index:5000;
+
+}
+
+
+
+#contenedorJuego.fullscreen iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:0;
+
+}
+
+
+
+#cerrarFullscreen{
+
+    display:none;
+
+    position:absolute;
+
+    top:20px;
+
+    right:30px;
+
+    z-index:6000;
+
+    background:#ff4444;
+
+    color:white;
+
+    border:none;
+
+    border-radius:50%;
+
+    width:50px;
+
+    height:50px;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+}
+
+
+#contenedorJuego.fullscreen #cerrarFullscreen{
+
+    display:block;
+
+}
