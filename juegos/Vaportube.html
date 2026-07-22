@@ -216,15 +216,34 @@
 
 <section class="juego-online">
 
+
+<button class="boton-fullscreen" onclick="abrirJuego()">
+
+    ⛶ Pantalla completa
+
+</button>
+
+
+<div id="contenedorJuego">
+
     <iframe
-        src="https://playingcards.io/5rbgug"
-        width="100%"
-        height="800"
-        style="border:none; border-radius:20px;">
+        id="juegoFrame"
+        src="https://playingcards.io/5rbgug">
     </iframe>
 
-</section>
 
+    <button 
+    id="cerrarFullscreen"
+    onclick="cerrarJuego()">
+
+        ✕
+
+    </button>
+
+</div>
+
+
+</section>
         <!-- ===========================
                 PESTAÑAS
         ============================ -->
