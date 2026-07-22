@@ -552,10 +552,22 @@ section h2{
 }
 
 /* Imagen amplia arriba */
+.imagen-juego {
+
+    width:100%;
+    height:220px;
+    overflow:hidden;
+
+}
+
 .imagen-juego img {
-  width: 100%;
-  height: 200px;             /* controla la altura de la imagen */
-  object-fit: cover;         /* recorta sin deformar */
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
 }
 
 /* Texto debajo */
@@ -969,14 +981,14 @@ body.light .tarjeta-juego{
 
 body.light .info-juego h3{
 
-    color:white;
+   color:#222;
 
 }
 
 
 body.light .info-juego p{
 
-    color:#dddddd;
+   color:#555;
 
 }
 
