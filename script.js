@@ -307,27 +307,63 @@ document.addEventListener("keydown", (evento) => {
 function abrirJuego() {
 
     const juego = document.getElementById("contenedorJuego");
+    const botonCerrar = document.querySelector(".boton-cerrar-fullscreen");
 
-    juego.classList.add("fullscreen");
+
+    if (juego) {
+
+        juego.classList.add("fullscreen");
+
+    }
+
+
+    if (botonCerrar) {
+
+        botonCerrar.style.display = "block";
+
+    }
 
 }
+
 
 function cerrarJuego() {
 
     const juego = document.getElementById("contenedorJuego");
+    const botonCerrar = document.querySelector(".boton-cerrar-fullscreen");
 
-    juego.classList.remove("fullscreen");
+
+    if (juego) {
+
+        juego.classList.remove("fullscreen");
+
+    }
+
+
+    if (botonCerrar) {
+
+        botonCerrar.style.display = "none";
+
+    }
 
 }
 
+
 document.addEventListener("keydown", function (e) {
+
+    const juego = document.getElementById("contenedorJuego");
+
 
     if (
         e.key === "Escape" &&
-        document.getElementById("contenedorJuego").classList.contains("fullscreen")
+        juego &&
+        juego.classList.contains("fullscreen")
     ) {
 
         cerrarJuego();
+
+    }
+
+});
 
     }
 
