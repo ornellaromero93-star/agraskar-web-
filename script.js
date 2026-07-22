@@ -307,19 +307,10 @@ document.addEventListener("keydown", (evento) => {
 function abrirJuego() {
 
     const juego = document.getElementById("contenedorJuego");
-    const botonCerrar = document.querySelector(".boton-cerrar-fullscreen");
-
 
     if (juego) {
 
         juego.classList.add("fullscreen");
-
-    }
-
-
-    if (botonCerrar) {
-
-        botonCerrar.style.display = "block";
 
     }
 
@@ -329,19 +320,10 @@ function abrirJuego() {
 function cerrarJuego() {
 
     const juego = document.getElementById("contenedorJuego");
-    const botonCerrar = document.querySelector(".boton-cerrar-fullscreen");
-
 
     if (juego) {
 
         juego.classList.remove("fullscreen");
-
-    }
-
-
-    if (botonCerrar) {
-
-        botonCerrar.style.display = "none";
 
     }
 
@@ -360,10 +342,6 @@ document.addEventListener("keydown", function (e) {
     ) {
 
         cerrarJuego();
-
-    }
-
-});
 
     }
 
