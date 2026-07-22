@@ -515,75 +515,131 @@ section h2{
 ==================================================*/
 
 .juegos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 35px;
-  margin-top: 40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+
+    gap:35px;
+
+    margin-top:40px;
+
 }
+
 
 /* Carrusel horizontal */
+
 .juegos.carrusel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 10px;
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+    scroll-snap-type:x mandatory;
+
+    padding:10px;
+
 }
+
 
 .juegos.carrusel .tarjeta-juego {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
+
+    flex:0 0 auto;
+
+    scroll-snap-align:start;
+
 }
+
+
+/* Tarjeta */
 
 .tarjeta-juego {
-  display: flex;
-  flex-direction: column;
-  width: 300px;              /* más ancho para que no quede tan rectangular */
-  border-radius: 20px;
-  overflow: hidden;
-  background: #222;
-  box-shadow: 0 8px 20px rgba(0,0,0,.4);
-  transition: .35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:300px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:#222;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+    transition:.35s;
+
 }
+
 
 .tarjeta-juego:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(47,128,237,.45);
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(47,128,237,.45);
+
 }
 
-/* Imagen amplia arriba */
+
+/* Imagen */
+
 .imagen-juego {
 
     width:100%;
+
     height:220px;
+
     overflow:hidden;
 
 }
 
+
 .imagen-juego img {
 
     width:100%;
+
     height:100%;
+
     object-fit:cover;
+
     display:block;
 
 }
-}
+
 
 /* Texto debajo */
+
 .info-juego {
-  padding: 18px;
-  text-align: center;
+
+    padding:25px;
+
+    text-align:center;
+
 }
 
+
+/* Etiquetas */
+
 .etiqueta {
+
     display:inline-block;
+
     padding:6px 12px;
+
     margin-bottom:10px;
+
     border-radius:20px;
+
     font-size:12px;
+
     font-weight:bold;
+
     color:white;
+
 }
 
 
@@ -591,52 +647,88 @@ section h2{
 
 .etiqueta.publicado {
 
-    background:#18b65b;   /* verde */
+    background:#18b65b;
 
 }
 
 
 .etiqueta.editorial {
 
-    background:#a855f7;   /* violeta */
+    background:#a855f7;
 
 }
 
 
 .etiqueta.online {
 
-    background:#ff7f32;    /* naranja */
+    background:#ff7f32;
 
 }
+
+
+/* Títulos */
+
 .info-juego h3 {
-  margin-bottom: 8px;
-  font-size: 20px;           /* más compacto */
-  white-space: nowrap;       /* fuerza a una sola línea */
-  overflow: hidden;
-  text-overflow: ellipsis;   /* si es muy largo, pone "..." */
+
+    margin-bottom:10px;
+
+    font-size:20px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
 }
+
+
+/* Descripción */
 
 .info-juego p {
-  color: #dddddd;
-  line-height: 1.4;
-  font-size: 14px;
-  max-height: 3.2em;         /* limita a dos líneas aprox */
-  overflow: hidden;
+
+    color:#dddddd;
+
+    line-height:1.5;
+
+    font-size:14px;
+
+    margin:15px 8px;
+
+    max-height:3.2em;
+
+    overflow:hidden;
+
 }
+
+
+/* Botón */
 
 .info-juego a {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 20px;
-  background: #2f80ed;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: .3s;
+
+    display:inline-block;
+
+    margin-top:12px;
+
+    padding:10px 20px;
+
+    background:#2f80ed;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
 }
 
+
 .info-juego a:hover {
-  background: #4b97ff;
+
+    background:#4b97ff;
+
 }
 
 /*==================================================
