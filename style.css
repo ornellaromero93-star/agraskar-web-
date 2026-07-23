@@ -276,30 +276,27 @@ body{
 
 }
 
-.redes a {
-    width:45px;
-    height:45px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:#1b1b1b;       /* fondo oscuro */
-    color:#2f80ed;            /* ícono azul */
-    border:2px solid #2f80ed; /* borde azul */
-    border-radius:50%;
-
+.contacto {
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:10px;
+    background:#2f80ed;
+    color:white;
     text-decoration:none;
-    font-size:20px;
+    transition:.35s;
 
-    transition:.30s;
+    /* brillo permanente */
+    box-shadow:0 0 12px rgba(47,128,237,.6),
+               0 0 20px rgba(47,128,237,.4);
 }
 
-.redes a:hover {
-    transform:scale(1.20);
-    box-shadow:0 0 15px #2f80ed;
-    background:#2f80ed;       /* al pasar el mouse, fondo azul */
-    color:white;              /* ícono blanco */
+.contacto:hover {
+    background:#4b97ff;
+
+    /* brillo más intenso al pasar el mouse */
+    box-shadow:0 0 18px rgba(47,128,237,1),
+               0 0 35px rgba(47,128,237,.8);
+    transform:scale(1.05);
 }
 
 
