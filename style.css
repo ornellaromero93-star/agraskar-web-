@@ -241,44 +241,6 @@ body{
 
 }
 
-
-/*==================================================
-                BOTÓN MODO OSCURO
-==================================================*/
-
-.modo-btn{
-
-    width:100%;
-
-    margin-top:20px;
-
-    padding:16px;
-
-    border:none;
-
-    border-radius:12px;
-
-    background:#2f80ed;
-
-    color:white;
-
-    font-size:17px;
-
-    cursor:pointer;
-
-    transition:.30s;
-
-}
-
-.modo-btn:hover{
-
-    background:#4b97ff;
-
-    transform:scale(1.03);
-
-}
-
-
 /*==================================================
               PARTE INFERIOR SIDEBAR
 ==================================================*/
