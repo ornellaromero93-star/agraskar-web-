@@ -264,17 +264,76 @@ body{
                     REDES
 ==================================================*/
 
-.redes{
-
+.redes {
     display:flex;
-
     justify-content:center;
-
     gap:18px;
-
     margin-bottom:25px;
-
 }
+
+.redes a {
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1b1b1b;
+    color:#2f80ed;
+    border:2px solid #2f80ed;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+    transition:.35s;
+
+    /* brillo permanente */
+    box-shadow:0 0 12px rgba(47,128,237,.6),
+               0 0 20px rgba(47,128,237,.4);
+}
+
+.redes a:hover {
+    background:#2f80ed;
+    color:white;
+
+    /* brillo más intenso al pasar el mouse */
+    box-shadow:0 0 18px rgba(47,128,237,1),
+               0 0 35px rgba(47,128,237,.8);
+    transform:scale(1.15);
+}
+
+/* Ícono especial BGG */
+.icono-bgg {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#2f80ed;
+  overflow:hidden;
+
+  /* brillo permanente */
+  box-shadow:0 0 12px rgba(47,128,237,.6),
+             0 0 20px rgba(47,128,237,.4);
+}
+
+.icono-bgg:hover {
+  background:#4b97ff;
+
+  /* brillo más intenso */
+  box-shadow:0 0 18px rgba(47,128,237,1),
+             0 0 35px rgba(47,128,237,.8);
+  transform:scale(1.15);
+}
+
+.icono-bgg img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+/*==================================================
+                    CONTACTO
+==================================================*/
 
 .contacto {
     display:inline-block;
@@ -283,70 +342,12 @@ body{
     background:#2f80ed;
     color:white;
     text-decoration:none;
-    transition:.35s;
-
-    /* brillo permanente */
-    box-shadow:0 0 12px rgba(47,128,237,.6),
-               0 0 20px rgba(47,128,237,.4);
+    transition:.30s;
 }
 
 .contacto:hover {
     background:#4b97ff;
-
-    /* brillo más intenso al pasar el mouse */
-    box-shadow:0 0 18px rgba(47,128,237,1),
-               0 0 35px rgba(47,128,237,.8);
-    transform:scale(1.05);
 }
-
-
-.icono-bgg {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;          /* tamaño del círculo */
-  height: 40px;
-  border-radius: 50%;   /* círculo perfecto */
-  background: #2f80ed;  /* azul igual que los otros íconos */
-  overflow: hidden;     /* recorta lo que se salga */
-}
-
-.icono-bgg img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  /* ajusta la imagen sin deformarla */
-}
-
-
-
-/*==================================================
-                    CONTACTO
-==================================================*/
-
-.contacto{
-
-    display:inline-block;
-
-    padding:12px 20px;
-
-    border-radius:10px;
-
-    background:#2f80ed;
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:.30s;
-
-}
-
-.contacto:hover{
-
-    background:#4b97ff;
-
-}
-
 
 /*==================================================
                   CONTENIDO
