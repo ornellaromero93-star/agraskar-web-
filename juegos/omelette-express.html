@@ -23,77 +23,138 @@
                     MENÚ LATERAL
         =========================================== -->
 
-  <aside class="sidebar">
+<!-- ===========================
+        MENU LATERAL
+=========================== -->
+
+<aside class="sidebar">
 
 
-<div class="logo">
+    <!-- LOGO -->
 
-    <div class="logo-icono">
-        <img src="../imagenes/logo.png" alt="Agraskar">
+    <div class="logo">
+
+        <div class="logo-icono">
+
+            <img src="../imagenes/logo.png" alt="Agraskar">
+
+        </div>
+
+
+        <h2>Agraskar</h2>
+
     </div>
 
-    <h2>Agraskar</h2>
+    <!-- MENU PRINCIPAL -->
 
-</div>
-
-
-
-<nav class="nav-links">
-
-<a href="../index.html#inicio">
-<i class="fas fa-house"></i>
-Inicio
-</a>
+    <nav class="nav-links">
 
 
-<a href="../index.html#juegos">
-<i class="fas fa-dice"></i>
-Juegos
-</a>
+
+        <!-- INICIO -->
+
+        <a href="../index.html#inicio">
+
+            <i class="fas fa-house"></i>
+
+            <span>Inicio</span>
+
+        </a>
 
 
-<a href="../index.html#imprimibles">
-<i class="fas fa-print"></i>
-Imprimibles
-</a>
+        <!-- JUEGOS DESPLEGABLE -->
+
+        <div class="menu-juegos">
 
 
-<a href="../index.html#contacto">
-<i class="fas fa-envelope"></i>
-Contacto
-</a>
+            <button class="juegos-btn" type="button">
+
+                <i class="fas fa-dice"></i> 
+                <span>Juegos</span>
 
 
-</nav>
+                <i class="fas fa-chevron-down"></i>
 
-<div class="sidebar-bottom">
 
-  <h3>Seguinos</h3>
+            </button>
 
-  <div class="redes">
-    <a href="https://www.instagram.com/agraskar/"
-       aria-label="Instagram" target="_blank">
-       <i class="fab fa-instagram"></i>
-    </a>
+           <div class="submenu-juegos">
 
-    <a href="https://www.youtube.com/@Agraskar"
-       aria-label="YouTube" target="_blank">
-       <i class="fab fa-youtube"></i>
-    </a>
 
-    <a href="https://boardgamegeek.com/boardgamedesigner/173168/agustin-atencio-andrioli"
-       aria-label="BoardGameGeek" target="_blank"
-       class="icono-bgg">
-       <img src="imagenes/bgg-logo.png" alt="BGG">
-    </a>
-  </div>
+                <a href="../index.html#publicados">
 
-  <a href="index.html#contacto" class="contacto">
-    <i class="fas fa-envelope"></i>
-    Contacto
-  </a>
+                    Juegos Publicados
 
-</div>
+                </a>
+
+
+
+                <a href="../index.html#editorial">
+
+                    Buscando Editorial
+
+                </a>
+
+
+
+                <a href="../index.html#online">
+
+                    Juega Online
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- IMPRIMIBLES -->
+
+        <a href="../index.html#imprimibles">
+
+
+            <i class="fas fa-print"></i>
+
+
+            <span>Imprimibles</span>
+
+
+        </a>
+    </nav>
+
+    <!-- REDES -->
+
+    <div class="redes">
+
+
+        <a href="https://www.instagram.com/agraskar/"
+           aria-label="Instagram"
+           target="_blank">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <a href="https://www.youtube.com/@Agraskar"
+           aria-label="YouTube"
+           target="_blank">
+
+            <i class="fab fa-youtube"></i>
+
+        </a>
+
+       
+        <a href="https://boardgamegeek.com/boardgamedesigner/173168/agustin-atencio-andrioli"
+           aria-label="BoardGameGeek"
+           target="_blank"
+           class="icono-bgg">
+            <img src="../imagenes/bgg-logo.png" alt="BGG">
+
+        </a>
+>
+        </aside>
 
     <!-- ===========================
             CONTENIDO
@@ -474,27 +535,22 @@ Contacto
         <!-- ===========================
             CONTACTO
         ============================ -->
-
         <section class="contacto-juego">
 
-            <h2> Contacto</h2>
+  <h2>Contacto</h2>
 
-            <p>
+  <p>
+    ¿Sos una editorial, distribuidor o querés comunicarte con Agraskar?
+  </p>
 
-                ¿Sos una editorial, distribuidor o querés comunicarte con Agraskar?
+  <p>
+    agraskar@hotmail.com 
+    <a href="mailto:contacto@agraskar.com" class="boton-contacto" aria-label="Enviar email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </p>
 
-            </p>
-
-            <a href="mailto:contacto@agraskar.com" class="boton-contacto">
-
-                <i class="fas fa-envelope"></i>
-
-               agraskar@hotmail.com
-
-            </a>
-
-        </section>
-
+</section>
 
         <!-- ===========================
             FOOTER
