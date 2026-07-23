@@ -748,7 +748,7 @@ section h2{
 
 .contacto-section p{
 
-    margin-top:15px;
+    margin-top:15px;  /* ← este margen crea el espacio */
 
     color:#dddddd;
 
@@ -1693,24 +1693,6 @@ footer{
 }
 
 
-/*==================================================
-          MODO CLARO - PÁGINA JUEGO
-==================================================*/
-
-body.light .tab-content,
-body.light .tarjeta-relacionada{
-
-    background:white;
-
-    color:#222;
-
-}
-
-body.light .tabla-ficha td{
-
-    border-bottom:1px solid #dddddd;
-
-}
 
 /*=========================================
         FLECHAS DEL VISOR
@@ -1792,6 +1774,20 @@ body.light .tabla-ficha td{
     backdrop-filter:blur(6px);
 
 }
+
+/*==================================================
+        CONTACTO EN PÁGINA DE JUEGO
+==================================================*/
+
+.contacto-juego p {
+    margin-top:15px;   /* mismo espacio que en inicio */
+    color:#dddddd;     /* tono gris claro para texto */
+}
+
+
+/* ==========================================
+  PAGINA DE INICIO
+========================================== */
 /* ==========================================
    Carrusel simple para las secciones de juegos
 ========================================== */
@@ -1827,7 +1823,7 @@ body.light .tabla-ficha td{
 
 
 /*=========================================
-        JUEGO ONLINE
+        JUEGO ONLINE VISOR de juego
 =========================================*/
 
 .juego-online{
