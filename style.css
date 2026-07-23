@@ -345,6 +345,22 @@ body{
 
 }
 
+.icono-bgg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;       /* tamaño del círculo */
+  height: 40px;
+  border-radius: 50%; /* círculo perfecto */
+  background: #2f80ed; /* azul igual que los otros íconos */
+  overflow: hidden;   /* recorta lo que se salga */
+}
+
+.icono-bgg img {
+  width: 70%;        /* ajusta el tamaño dentro del círculo */
+  height: auto;      /* mantiene proporción sin deformar */
+}
+
 
 /*==================================================
                     CONTACTO
