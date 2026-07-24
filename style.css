@@ -1999,11 +1999,11 @@ footer{
 =========================================*/
 @font-face {
     font-family: "Remember Reiner";
-    src: url("fonts/RememberReinerFS.ttf") format("truetype");
+ src: url("RememberReinerFS.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-.hero h1{
+.hero h2{
     font-family: "Remember Reiner", serif;
 }
 .logo{
