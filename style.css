@@ -2009,3 +2009,8 @@ footer{
 .logo{
     font-family: "Remember Reiner", serif;
 }
+font-size: 150px;          /* Tamaño */
+color: black;           /* Color */
+letter-spacing: 5px;      /* Separación entre letras */
+text-transform: uppercase;/* MAYÚSCULAS */
+text-shadow: 0 0 15px #2f80ed; /* Brillo */
