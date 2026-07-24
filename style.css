@@ -2006,9 +2006,9 @@ footer{
 .hero h2{
     font-family: "Remember Reiner", serif;
     font-size: 100px;
-    color: #000000;
+    color:  #ffffff;
     letter-spacing: 5px;
-    text-shadow: 0 0 10px #2f80ed;
+    text-shadow: 0 0 5px #2f80ed;
 }
 
 .logo{
