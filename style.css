@@ -1993,3 +1993,19 @@ footer{
     display:block;
 
 }
+
+/*=========================================
+        Fuente para Agraskar en portada
+=========================================*/
+@font-face {
+    font-family: "Remember Reiner";
+    src: url("fonts/RememberReinerFS.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.hero h1{
+    font-family: "Remember Reiner", serif;
+}
+.logo{
+    font-family: "Remember Reiner", serif;
+}
