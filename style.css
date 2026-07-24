@@ -705,6 +705,16 @@ section h2{
 
 }
 
+/* Centrar únicamente el título, descripción y botón */
+.info-juego h3,
+.info-juego p{
+    text-align: center;
+}
+
+.info-juego a{
+    display: table;
+    margin: 15px auto 0;
+}
 /*==================================================
                 IMPRIMIBLES
 ==================================================*/
