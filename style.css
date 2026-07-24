@@ -2005,16 +2005,15 @@ footer{
 }
 .hero h2{
     font-family: "Remember Reiner", serif;
-    font-size: 150px;
+    font-size: 100px;
     color: #000000;
     letter-spacing: 5px;
-    text-transform: uppercase;
-    text-shadow: 0 0 15px #2f80ed;
+    text-shadow: 0 0 10px #2f80ed;
 }
 
 .logo{
     font-family: "Remember Reiner", serif;
-    font-size: 50px;
+    font-size: 25px;
     color: #ffffff;
     letter-spacing: 2px;
 }
