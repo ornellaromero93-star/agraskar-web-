@@ -235,17 +235,59 @@
     </section>
 
 
-
-
-
     <!-- AQUÍ VAN LAS TARJETAS -->
 
-    <section class="grid-imprimibles">
+    <!-- ==========================================
+            Tarjeta de prueba
+    =========================================== -->
+<section class="grid-imprimibles">
+
+
+    <article class="tarjeta-imprimible">
+
+
+        <img src="imagenes/prueba.jpg" alt="Imprimible">
+
+
+        <div class="info-imprimible">
+
+
+            <h3>
+                Nombre del juego
+            </h3>
+
+
+            <p>
+                Juego listo para imprimir y disfrutar.
+            </p>
+
+
+            <div class="botones-imprimible">
+
+
+                <button onclick="abrirPDF('archivos/prueba.pdf')">
+                    Ver
+                </button>
+
+
+                <a href="archivos/prueba.pdf" target="_blank">
+                    Descargar
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </article>
+
 
 
     </section>
 
-
+    
 
 </main>
 
@@ -255,7 +297,20 @@
 
 </div>
 
+<!-- VISOR PDF -->
 
+<div id="visorPDF" class="visor-pdf">
+
+
+    <button class="cerrar-pdf" onclick="cerrarPDF()">
+        ×
+    </button>
+
+
+    <iframe id="pdfMostrado"></iframe>
+
+
+</div>
 
 <script src="script.js"></script>
 
