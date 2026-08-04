@@ -371,3 +371,35 @@ if (abrirBio && cerrarBio && bioModal) {
     });
 
 }
+
+/* ==========================================
+            VISOR DE PDF
+=========================================== */
+
+
+function abrirPDF(archivo){
+
+    const visor = document.getElementById("visorPDF");
+    const pdf = document.getElementById("pdfMostrado");
+
+
+    visor.style.display = "flex";
+
+    pdf.src = archivo;
+
+}
+
+
+
+function cerrarPDF(){
+
+    const visor = document.getElementById("visorPDF");
+    const pdf = document.getElementById("pdfMostrado");
+
+
+    visor.style.display = "none";
+
+    pdf.src = "";
+
+}
+
