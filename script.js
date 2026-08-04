@@ -346,3 +346,28 @@ document.addEventListener("keydown", function (e) {
     }
 
 });
+/*==============================
+      BIOGRAFÍA AGRASKAR
+==============================*/
+
+const abrirBio = document.getElementById("abrirBio");
+const cerrarBio = document.getElementById("cerrarBio");
+const bioModal = document.getElementById("bioModal");
+
+if (abrirBio && cerrarBio && bioModal) {
+
+    abrirBio.addEventListener("click", () => {
+        bioModal.classList.add("activo");
+    });
+
+    cerrarBio.addEventListener("click", () => {
+        bioModal.classList.remove("activo");
+    });
+
+    bioModal.addEventListener("click", (e) => {
+        if (e.target === bioModal) {
+            bioModal.classList.remove("activo");
+        }
+    });
+
+}
