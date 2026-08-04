@@ -2122,3 +2122,234 @@ footer{
     cursor:pointer;
 
 }
+
+/* ==========================================
+            IMPRIMIBLES
+=========================================== */
+
+
+/* CONTENEDOR DE TARJETAS */
+
+.grid-imprimibles{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+
+
+/* TARJETA */
+
+.tarjeta-imprimible{
+
+    background:#1b1b1b;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+
+
+.tarjeta-imprimible:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/* IMAGEN */
+
+.tarjeta-imprimible img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+/* INFORMACIÓN */
+
+.info-imprimible{
+
+    padding:20px;
+
+}
+
+
+
+.info-imprimible h3{
+
+    margin-top:0;
+
+    font-size:1.4rem;
+
+}
+
+
+
+.info-imprimible p{
+
+    line-height:1.5;
+
+}
+
+
+
+/* BOTONES */
+
+.botones-imprimible{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+
+
+.botones-imprimible a,
+.botones-imprimible button{
+
+    flex:1;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    border:none;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+}
+
+
+
+/* BOTÓN VER */
+
+.botones-imprimible button{
+
+    background:#3b82f6;
+
+    color:white;
+
+}
+
+
+
+/* BOTÓN DESCARGAR */
+
+.botones-imprimible a{
+
+    background:#18b65b;
+
+    color:white;
+
+}
+
+
+
+/* HOVER BOTONES */
+
+.botones-imprimible button:hover,
+.botones-imprimible a:hover{
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* ==========================================
+              VISOR PDF
+=========================================== */
+
+
+.visor-pdf{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.85);
+
+    z-index:9999;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.visor-pdf iframe{
+
+    width:80%;
+
+    height:90%;
+
+    background:white;
+
+    border:none;
+
+}
+
+
+
+
+/* BOTÓN CERRAR */
+
+.cerrar-pdf{
+
+    position:absolute;
+
+    top:20px;
+
+    right:30px;
+
+    font-size:40px;
+
+    color:white;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+}
