@@ -740,6 +740,31 @@ section h2{
     line-height:1.7;
 
 }
+.imprimibles a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+    background:#2f80ed;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.imprimibles a:hover{
+
+    background:#4b97ff;
+
+}
 
 
 /*==================================================
