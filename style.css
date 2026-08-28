@@ -1662,9 +1662,6 @@ footer{
             JUEGOS RELACIONADOS
 ==================================================*/
 
-/*==================================================
-            JUEGOS RELACIONADOS
-==================================================*/
 
 .relacionados{
 
@@ -1859,9 +1856,36 @@ footer{
         CONTACTO EN PÁGINA DE JUEGO
 ==================================================*/
 
+/*==================================================
+        CONTACTO EN PÁGINAS DE JUEGOS
+==================================================*/
+
+.contacto-juego {
+    margin-top:60px;
+    margin-bottom:40px;
+    padding:35px;
+    background:#1b1b1b;
+    border-radius:20px;
+}
+
+.contacto-juego h2 {
+    font-size:34px;
+    margin-bottom:25px;
+}
+
 .contacto-juego p {
-    margin-top:15px;   /* mismo espacio que en inicio */
-    color:#dddddd;     /* tono gris claro para texto */
+    margin-top:15px;
+    color:#dddddd;
+    line-height:1.6;
+}
+
+.contacto-juego a {
+    color:#2f80ed;
+    text-decoration:none;
+}
+
+.contacto-juego a:hover {
+    color:#4b97ff;
 }
 
 
