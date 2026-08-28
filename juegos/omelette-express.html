@@ -511,9 +511,6 @@
             TAMBIÉN TE PUEDE INTERESAR
         ============================ -->
 
-      <!-- ===========================
-        TAMBIÉN TE PUEDE INTERESAR
-============================ -->
 
 <section class="relacionados">
 
@@ -570,6 +567,63 @@
 
 <script src="../script.js"></script>
 
+    <script>
+
+const juegos = [
+
+    {
+        nombre: "Omelette Express",
+        imagen: "../imagenes/juegos/omelette-express.jpg",
+        descripcion: "Juego familiar de puzzle y estrategia. Un divertido Party Game para toda la familia.",
+        enlace: "omelette-express.html"
+    },
+
+    {
+        nombre: "Strike!",
+        imagen: "../imagenes/juegos/strike.jpg",
+        descripcion: "Juego familiar de deportes lleno de estrategia y diversión.",
+        enlace: "strike.html"
+    },
+
+    {
+        nombre: "Vaportube",
+        imagen: "../imagenes/juegos/vaportube.jpg",
+        descripcion: "Juego online de cartas.",
+        enlace: "vaportube.html"
+    }
+
+];
+
+const paginaActual = window.location.pathname.split("/").pop();
+
+let juegosDisponibles = juegos.filter(
+    juego => juego.enlace !== paginaActual
+);
+
+juegosDisponibles.sort(() => Math.random() - 0.5);
+
+const contenedor = document.getElementById("juegos-relacionados");
+
+juegosDisponibles.forEach(juego => {
+
+    const tarjeta = document.createElement("div");
+
+    tarjeta.className = "tarjeta-relacionada";
+
+    tarjeta.innerHTML = `
+        <img src="${juego.imagen}" alt="${juego.nombre}">
+        <h3>${juego.nombre}</h3>
+        <p>${juego.descripcion}</p>
+        <a href="${juego.enlace}">
+            Ver juego
+        </a>
+    `;
+
+    contenedor.appendChild(tarjeta);
+
+});
+
+</script>
 </body>
 
 </html>
